@@ -1,0 +1,32 @@
+Detecting compiler hash for triplet x64-windows...
+Compiler found: C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.41.34120/bin/Hostx64/x64/cl.exe
+The following packages are already installed:
+  * abseil:x64-windows@20250127.1#1
+  * flatbuffers:x64-windows@25.2.10
+  * libjpeg-turbo:x64-windows@3.1.0#1
+  * liblzma:x64-windows@5.8.1
+  * libpng:x64-windows@1.6.47
+  * libwebp[core,libwebpmux,nearlossless,simd,unicode]:x64-windows@1.5.0#1
+  * lz4:x64-windows@1.10.0
+    mysql-connector-cpp:x64-windows@9.1.0#4
+    opencv:x64-windows@4.11.0
+  * opencv4[calib3d,core,directml,dnn,dshow,fs,gapi,highgui,intrinsics,jpeg,msmf,png,quirc,thread,tiff,webp,win32ui]:x64-windows@4.11.0#1
+  * openssl:x64-windows@3.5.0#1
+  * protobuf:x64-windows@5.29.3#1
+  * quirc:x64-windows@1.2
+  * rapidjson:x64-windows@2025-02-26
+  * tiff[core,jpeg,lzma,zip]:x64-windows@4.7.0
+  * utf8-range:x64-windows@5.29.3
+  * vcpkg-cmake:x64-windows@2024-04-23
+  * vcpkg-cmake-config:x64-windows@2024-05-23
+  * vcpkg-cmake-get-vars:x64-windows@2025-05-29
+  * vcpkg-get-python-packages:x64-windows@2025-04-05
+  * zlib:x64-windows@1.3.1
+  * zstd:x64-windows@1.5.7
+mysql-connector-cpp provides CMake targets:
+
+  # this is heuristically generated, and may not be correct
+  find_package(unofficial-mysql-connector-cpp CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE unofficial::mysql-connector-cpp::connector)
+
+All requested installations completed successfully in: 1.43 ms
