@@ -1,11 +1,11 @@
 #include <opencv2/opencv.hpp>
 #include <iostream>
-#include <mysqlx/xdevapi.h>
-#include <image_recieve.h>
+#include <mysql_connection.h>
+// #include <image_recieve.h>
 
 using namespace cv;
 using namespace std;
-using namespace mysqlx;
+using namespace sql;
 
 int choices();
 int * get_hsv_values();
@@ -27,7 +27,7 @@ int main()
   data = make_unique<Schema>(s2->getSchema("data"));
   table = make_unique<Table>(data->getTable("data_line"));
   }
-  catch(const mysqlx::Error &err)
+  catch(const mysql::Error &err)
   {
     cout << err;
   }
@@ -76,7 +76,7 @@ int main()
         .set("SHAPE", shape_choice)
         .execute();
       }
-      catch(const mysqlx::Error &err)
+      catch(const mysql::Error &err)
       {
       cout << err;
       }

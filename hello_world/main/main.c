@@ -87,12 +87,12 @@ void wifi_init_sta(void)
 
     sta_netif = esp_netif_create_default_wifi_sta();
     assert(sta_netif);
-    
+
     wifi_config_t wifi_config = {
         .sta = {
             .ssid = ESP_WIFI_SSID,
             .threshold.authmode = WIFI_AUTH_WPA2_ENTERPRISE
-    
+
         },
     };
 
@@ -103,9 +103,9 @@ void wifi_init_sta(void)
     ESP_ERROR_CHECK(esp_eap_client_set_username((uint8_t *)ESP_WIFI_USERNAME, strlen(ESP_WIFI_USERNAME)));
     ESP_ERROR_CHECK(esp_eap_client_set_password((uint8_t *)ESP_WIFI_PASS, strlen(ESP_WIFI_PASS)));
 
-    
+
     ESP_ERROR_CHECK( esp_wifi_start() );
-   
+
 
 }
 
@@ -113,18 +113,5 @@ void wifi_init_sta(void)
 
 void app_main(void)
 {
-    esp_err_t ret = nvs_flash_init();
-    if (ret == ESP_ERR_NVS_NO_FREE_PAGES || ret == ESP_ERR_NVS_NEW_VERSION_FOUND) {
-      ESP_ERROR_CHECK(nvs_flash_erase());
-      ret = nvs_flash_init();
-    }
-    ESP_ERROR_CHECK(ret);
 
-    ESP_LOGI(TAG, "ESP_WIFI_MODE_STA");
-    wifi_init_sta();
-
-    vTaskDelay(pdMS_TO_TICKS(5000));
-
-    ESP_LOGI("PINGING", "Pinging 8.8.8.8");
-    initialize_ping("8.8.8.8");
 }

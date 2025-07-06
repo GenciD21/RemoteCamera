@@ -3,11 +3,11 @@
   "configurePresets": [
     {
       "name": "default",
-      "generator": "Visual Studio 17 2022",
-      "binaryDir": "build",
-      "cacheVariables": {
-        "CMAKE_TOOLCHAIN_FILE": "$C:/vcpkg/scripts/buildsystems/vcpkg.cmake"
-      }
+      "generator": "Ninja",
+      "binaryDir": "build"
+//      "cacheVariables": {
+//        "CMAKE_TOOLCHAIN_FILE": "$C:/vcpkg/scripts/buildsystems/vcpkg.cmake"
+//      }
     }
   ]
 }

@@ -1,0 +1,6 @@
+{
+  "C_Cpp.intelliSenseEngine": "default",
+  "idf.espIdfPath": "/home/genci21/esp/v5.3.3/esp-idf",
+  "idf.toolsPath": "/home/genci21/.espressif",
+  "idf.pythonInstallPath": "/usr/bin/python3"
+}

@@ -1,0 +1,4 @@
+/snap/clion/359/bin/cmake/linux/x64/bin/cmake -DCMAKE_MAKE_PROGRAM=/snap/clion/359/bin/ninja/linux/x64/ninja -G Ninja -S /home/genci21/Desktop/RemoteCamera -B /home/genci21/Desktop/RemoteCamera
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/genci21/Desktop/RemoteCamera
