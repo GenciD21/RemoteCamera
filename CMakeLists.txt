@@ -17,10 +17,10 @@ find_package(OpenCV REQUIRED)
 
 
 add_executable(my_app main.cpp
-        hello_world/main/extra_executables/wifi.c
-        hello_world/main/extra_includes/wifi.h
-        hello_world/main/extra_executables/http_requests.c
-        hello_world/main/extra_includes/http_requests.h)
+        esp_stuff/main/extra_executables/wifi.c
+        esp_stuff/main/extra_includes/wifi.h
+        esp_stuff/main/extra_executables/http_requests.c
+        esp_stuff/main/extra_includes/http_requests.h)
 
 # target_include_directories(my_app PRIVATE "./extra_includes")
 

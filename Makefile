@@ -1,11 +1,8 @@
 build_all: compile_main flash_esp run
 
-run_main:
-	cmake --build build
-	./build/Debug/my_app.exe
-	
-run:
-	./build/debug/my_app.exe
+gurt:
+	cd ~/esp/esp-idf && ./install.sh && . ./export.sh
 
 monitor:
-	cd C:\Users\GenciDuraku\new_opnecv_projects\RemoteCamera\testing && idf.py monitor -p COM3 -b 115200 
+	cd C:\Users\GenciDuraku\new_opnecv_projects\RemoteCamera\testing && idf.py monitor -p COM3 -b 115200
+
