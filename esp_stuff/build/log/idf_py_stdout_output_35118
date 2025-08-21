@@ -1,0 +1,1985 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2b (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x1870
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xce8
+load:0x403cb700,len:0x2ed8
+entry 0x403c8918
+[0;32mI (27) boot: ESP-IDF v5.3.3 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jul 22 2025 11:25:27[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) boot: efuse block revision: v1.3[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0ed30h ( 60720) map[0m
+[0;32mI (115) esp_image: segment 1: paddr=0001ed58 vaddr=3fc94600 size=012c0h (  4800) load[0m
+[0;32mI (116) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=27bcch (162764) map[0m
+[0;32mI (149) esp_image: segment 3: paddr=00047bf4 vaddr=3fc958c0 size=03f98h ( 16280) load[0m
+[0;32mI (153) esp_image: segment 4: paddr=0004bb94 vaddr=40374000 size=105d4h ( 67028) load[0m
+[0;32mI (177) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (177) boot: Disabling RNG early entropy source...[0m
+[0;32mI (189) cpu_start: Multicore app[0m
+[0;32mI (198) cpu_start: Pro cpu start user code[0m
+[0;32mI (198) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (198) app_init: Application information:[0m
+[0;32mI (201) app_init: Project name:     hello_world[0m
+[0;32mI (206) app_init: App version:      7bee0ac-dirty[0m
+[0;32mI (212) app_init: Compile time:     Aug 21 2025 12:00:29[0m
+[0;32mI (218) app_init: ELF file SHA256:  e251f84c8...[0m
+[0;32mI (223) app_init: ESP-IDF:          v5.3.3[0m
+[0;32mI (228) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (232) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (237) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (242) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (249) heap_init: At 3FC9A1D0 len 0004F540 (317 KiB): RAM[0m
+[0;32mI (255) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (262) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (268) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (275) spi_flash: detected chip: generic[0m
+[0;32mI (279) spi_flash: flash io: dio[0m
+[0;33mW (283) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (296) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (307) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (313) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (321) main_task: Started on CPU0[0m
+[0;32mI (331) main_task: Calling app_main()[0m
+[0;32mI (331) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (331) cam_hal: cam init ok[0m
+[0;32mI (341) sccb: pin_sda 4 pin_scl 5[0m
+[0;32mI (341) sccb: sccb_i2c_port=1[0m
+[0;32mI (341) gpio: GPIO[38]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (381) camera: Camera PID=0x3660 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (381) camera: Detected OV3660 camera[0m
+[0;32mI (381) camera: Detected camera at address=0x3c[0m
+[0;32mI (701) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (701) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 6[0m
+[0;32mI (701) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 24, dma_buffer_size: 30720[0m
+[0;32mI (711) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 8, total_cnt: 10[0m
+[0;32mI (721) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;31mE (721) cam_hal: cam_dma_config(504): frame buffer malloc failed[0m
+[0;31mE (731) cam_hal: cam_config(594): cam_dma_config failed[0m
+[0;31mE (741) gdma: gdma_disconnect(314): no peripheral is connected to the channel[0m
+[0;31mE (751) camera: Camera config failed with error 0xffffffff[0m
+[0;31mE (751) example:take_picture: Camera Init Failed[0m
+[0;32mI (761) example:take_picture: Taking picture...[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x42009c29  PS      : 0x00060530  A0      : 0x82009bd0  A1      : 0x3fc9de70  
+A2      : 0x3fc9de90  A3      : 0x3c0340e4  A4      : 0x3c034164  A5      : 0x3fc9dec0  
+A6      : 0x3c035508  A7      : 0x00000000  A8      : 0x82009c29  A9      : 0x3fc9de50  
+A10     : 0x000002f9  A11     : 0x3c035508  A12     : 0x3c03554c  A13     : 0x000002f9  
+A14     : 0x3c035508  A15     : 0x00000010  SAR     : 0x00000004  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000004  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xfffffffa  
+
+
+Backtrace: 0x42009c26:0x3fc9de70 0x42009bcd:0x3fc9de90 0x42026c1f:0x3fc9dee0 0x4037c0ed:0x3fc9df10
+
+
+
+
+ELF file SHA256: e251f84c8
+
+Rebooting...
+���ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375af8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x1870
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xce8
+load:0x403cb700,len:0x2ed8
+entry 0x403c8918
+[0;32mI (31) boot: ESP-IDF v5.3.3 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul 22 2025 11:25:27[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v0.2[0m
+[0;32mI (38) boot: efuse block revision: v1.3[0m
+[0;32mI (43) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (48) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (52) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (57) boot: Enabling RNG early entropy source...[0m
+[0;32mI (62) boot: Partition Table:[0m
+[0;32mI (66) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (73) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (81) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (88) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (96) boot: End of partition table[0m
+[0;32mI (100) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0ed30h ( 60720) map[0m
+[0;32mI (119) esp_image: segment 1: paddr=0001ed58 vaddr=3fc94600 size=012c0h (  4800) load[0m
+[0;32mI (120) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=27bcch (162764) map[0m
+[0;32mI (154) esp_image: segment 3: paddr=00047bf4 vaddr=3fc958c0 size=03f98h ( 16280) load[0m
+[0;32mI (158) esp_image: segment 4: paddr=0004bb94 vaddr=40374000 size=105d4h ( 67028) load[0m
+[0;32mI (181) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (181) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (202) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (205) app_init: Project name:     hello_world[0m
+[0;32mI (211) app_init: App version:      7bee0ac-dirty[0m
+[0;32mI (216) app_init: Compile time:     Aug 21 2025 12:00:29[0m
+[0;32mI (222) app_init: ELF file SHA256:  e251f84c8...[0m
+[0;32mI (227) app_init: ESP-IDF:          v5.3.3[0m
+[0;32mI (232) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (237) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (242) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (247) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (254) heap_init: At 3FC9A1D0 len 0004F540 (317 KiB): RAM[0m
+[0;32mI (260) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (266) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (272) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (280) spi_flash: detected chip: generic[0m
+[0;32mI (283) spi_flash: flash io: dio[0m
+[0;33mW (287) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (300) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (311) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (318) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (325) main_task: Started on CPU0[0m
+[0;32mI (335) main_task: Calling app_main()[0m
+[0;32mI (335) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (335) cam_hal: cam init ok[0m
+[0;32mI (345) sccb: pin_sda 4 pin_scl 5[0m
+[0;32mI (345) sccb: sccb_i2c_port=1[0m
+[0;32mI (345) gpio: GPIO[38]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (385) camera: Camera PID=0x3660 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (385) camera: Detected OV3660 camera[0m
+[0;32mI (385) camera: Detected camera at address=0x3c[0m
+[0;32mI (705) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (705) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 6[0m
+[0;32mI (705) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 24, dma_buffer_size: 30720[0m
+[0;32mI (715) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 8, total_cnt: 10[0m
+[0;32mI (725) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;31mE (725) cam_hal: cam_dma_config(504): frame buffer malloc failed[0m
+[0;31mE (735) cam_hal: cam_config(594): cam_dma_config failed[0m
+[0;31mE (745) gdma: gdma_disconnect(314): no peripheral is connected to the channel[0m
+[0;31mE (755) camera: Camera config failed with error 0xffffffff[0m
+[0;31mE (755) example:take_picture: Camera Init Failed[0m
+[0;32mI (765) example:take_picture: Taking picture...[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x42009c29  PS      : 0x00060530  A0      : 0x82009bd0  A1      : 0x3fc9de70  
+A2      : 0x3fc9de90  A3      : 0x3c0340e4  A4      : 0x3c034164  A5      : 0x3fc9dec0  
+A6      : 0x3c035508  A7      : 0x00000000  A8      : 0x82009c29  A9      : 0x3fc9de50  
+A10     : 0x000002fd  A11     : 0x3c035508  A12     : 0x3c03554c  A13     : 0x000002fd  
+A14     : 0x3c035508  A15     : 0x00000010  SAR     : 0x00000004  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000004  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xfffffffa  
+
+
+Backtrace: 0x42009c26:0x3fc9de70 0x42009bcd:0x3fc9de90 0x42026c1f:0x3fc9dee0 0x4037c0ed:0x3fc9df10
+
+
+
+
+ELF file SHA256: e251f84c8
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375af8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x1870
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xce8
+load:0x403cb700,len:0x2ed8
+entry 0x403c8918
+[0;32mI (31) boot: ESP-IDF v5.3.3 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul 22 2025 11:25:27[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v0.2[0m
+[0;32mI (38) boot: efuse block revision: v1.3[0m
+[0;32mI (43) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (48) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (52) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (57) boot: Enabling RNG early entropy source...[0m
+[0;32mI (62) boot: Partition Table:[0m
+[0;32mI (66) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (73) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (81) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (88) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (96) boot: End of partition table[0m
+[0;32mI (100) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0ed30h ( 60720) map[0m
+[0;32mI (119) esp_image: segment 1: paddr=0001ed58 vaddr=3fc94600 size=012c0h (  4800) load[0m
+[0;32mI (120) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=27bcch (162764) map[0m
+[0;32mI (154) esp_image: segment 3: paddr=00047bf4 vaddr=3fc958c0 size=03f98h ( 16280) load[0m
+[0;32mI (158) esp_image: segment 4: paddr=0004bb94 vaddr=40374000 size=105d4h ( 67028) load[0m
+[0;32mI (181) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (181) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (202) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (205) app_init: Project name:     hello_world[0m
+[0;32mI (211) app_init: App version:      7bee0ac-dirty[0m
+[0;32mI (216) app_init: Compile time:     Aug 21 2025 12:00:29[0m
+[0;32mI (222) app_init: ELF file SHA256:  e251f84c8...[0m
+[0;32mI (227) app_init: ESP-IDF:          v5.3.3[0m
+[0;32mI (232) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (237) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (242) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (247) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (254) heap_init: At 3FC9A1D0 len 0004F540 (317 KiB): RAM[0m
+[0;32mI (260) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (266) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (272) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (280) spi_flash: detected chip: generic[0m
+[0;32mI (283) spi_flash: flash io: dio[0m
+[0;33mW (287) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (300) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (311) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (318) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (325) main_task: Started on CPU0[0m
+[0;32mI (335) main_task: Calling app_main()[0m
+[0;32mI (335) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (335) cam_hal: cam init ok[0m
+[0;32mI (345) sccb: pin_sda 4 pin_scl 5[0m
+[0;32mI (345) sccb: sccb_i2c_port=1[0m
+[0;32mI (345) gpio: GPIO[38]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (385) camera: Camera PID=0x3660 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (385) camera: Detected OV3660 camera[0m
+[0;32mI (385) camera: Detected camera at address=0x3c[0m
+[0;32mI (705) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (705) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 6[0m
+[0;32mI (705) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 24, dma_buffer_size: 30720[0m
+[0;32mI (715) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 8, total_cnt: 10[0m
+[0;32mI (725) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;31mE (725) cam_hal: cam_dma_config(504): frame buffer malloc failed[0m
+[0;31mE (735) cam_hal: cam_config(594): cam_dma_config failed[0m
+[0;31mE (745) gdma: gdma_disconnect(314): no peripheral is connected to the channel[0m
+[0;31mE (755) camera: Camera config failed with error 0xffffffff[0m
+[0;31mE (755) example:take_picture: Camera Init Failed[0m
+[0;32mI (765) example:take_picture: Taking picture...[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x42009c29  PS      : 0x00060530  A0      : 0x82009bd0  A1      : 0x3fc9de70  
+A2      : 0x3fc9de90  A3      : 0x3c0340e4  A4      : 0x3c034164  A5      : 0x3fc9dec0  
+A6      : 0x3c035508  A7      : 0x00000000  A8      : 0x82009c29  A9      : 0x3fc9de50  
+A10     : 0x000002fd  A11     : 0x3c035508  A12     : 0x3c03554c  A13     : 0x000002fd  
+A14     : 0x3c035508  A15     : 0x00000010  SAR     : 0x00000004  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000004  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xfffffffa  
+
+
+Backtrace: 0x42009c26:0x3fc9de70 0x42009bcd:0x3fc9de90 0x42026c1f:0x3fc9dee0 0x4037c0ed:0x3fc9df10
+
+
+
+
+ELF file SHA256: e251f84c8
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375af8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x1870
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xce8
+load:0x403cb700,len:0x2ed8
+entry 0x403c8918
+[0;32mI (31) boot: ESP-IDF v5.3.3 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul 22 2025 11:25:27[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v0.2[0m
+[0;32mI (38) boot: efuse block revision: v1.3[0m
+[0;32mI (43) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (48) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (52) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (57) boot: Enabling RNG early entropy source...[0m
+[0;32mI (62) boot: Partition Table:[0m
+[0;32mI (66) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (73) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (81) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (88) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (96) boot: End of partition table[0m
+[0;32mI (100) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0ed30h ( 60720) map[0m
+[0;32mI (119) esp_image: segment 1: paddr=0001ed58 vaddr=3fc94600 size=012c0h (  4800) load[0m
+[0;32mI (120) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=27bcch (162764) map[0m
+[0;32mI (154) esp_image: segment 3: paddr=00047bf4 vaddr=3fc958c0 size=03f98h ( 16280) load[0m
+[0;32mI (158) esp_image: segment 4: paddr=0004bb94 vaddr=40374000 size=105d4h ( 67028) load[0m
+[0;32mI (181) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (181) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (202) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (205) app_init: Project name:     hello_world[0m
+[0;32mI (211) app_init: App version:      7bee0ac-dirty[0m
+[0;32mI (216) app_init: Compile time:     Aug 21 2025 12:00:29[0m
+[0;32mI (222) app_init: ELF file SHA256:  e251f84c8...[0m
+[0;32mI (227) app_init: ESP-IDF:          v5.3.3[0m
+[0;32mI (232) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (237) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (242) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (247) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (254) heap_init: At 3FC9A1D0 len 0004F540 (317 KiB): RAM[0m
+[0;32mI (260) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (266) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (272) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (280) spi_flash: detected chip: generic[0m
+[0;32mI (283) spi_flash: flash io: dio[0m
+[0;33mW (287) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (300) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (311) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (318) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (325) main_task: Started on CPU0[0m
+[0;32mI (335) main_task: Calling app_main()[0m
+[0;32mI (335) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (335) cam_hal: cam init ok[0m
+[0;32mI (345) sccb: pin_sda 4 pin_scl 5[0m
+[0;32mI (345) sccb: sccb_i2c_port=1[0m
+[0;32mI (345) gpio: GPIO[38]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (385) camera: Camera PID=0x3660 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (385) camera: Detected OV3660 camera[0m
+[0;32mI (385) camera: Detected camera at address=0x3c[0m
+[0;32mI (705) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (705) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 6[0m
+[0;32mI (705) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 24, dma_buffer_size: 30720[0m
+[0;32mI (715) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 8, total_cnt: 10[0m
+[0;32mI (725) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;31mE (725) cam_hal: cam_dma_config(504): frame buffer malloc failed[0m
+[0;31mE (735) cam_hal: cam_config(594): cam_dma_config failed[0m
+[0;31mE (745) gdma: gdma_disconnect(314): no peripheral is connected to the channel[0m
+[0;31mE (755) camera: Camera config failed with error 0xffffffff[0m
+[0;31mE (755) example:take_picture: Camera Init Failed[0m
+[0;32mI (765) example:take_picture: Taking picture...[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x42009c29  PS      : 0x00060530  A0      : 0x82009bd0  A1      : 0x3fc9de70  
+A2      : 0x3fc9de90  A3      : 0x3c0340e4  A4      : 0x3c034164  A5      : 0x3fc9dec0  
+A6      : 0x3c035508  A7      : 0x00000000  A8      : 0x82009c29  A9      : 0x3fc9de50  
+A10     : 0x000002fd  A11     : 0x3c035508  A12     : 0x3c03554c  A13     : 0x000002fd  
+A14     : 0x3c035508  A15     : 0x00000010  SAR     : 0x00000004  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000004  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xfffffffa  
+
+
+Backtrace: 0x42009c26:0x3fc9de70 0x42009bcd:0x3fc9de90 0x42026c1f:0x3fc9dee0 0x4037c0ed:0x3fc9df10
+
+
+
+
+ELF file SHA256: e251f84c8
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375af8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x1870
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xce8
+load:0x403cb700,len:0x2ed8
+entry 0x403c8918
+[0;32mI (31) boot: ESP-IDF v5.3.3 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul 22 2025 11:25:27[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v0.2[0m
+[0;32mI (38) boot: efuse block revision: v1.3[0m
+[0;32mI (43) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (48) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (52) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (57) boot: Enabling RNG early entropy source...[0m
+[0;32mI (62) boot: Partition Table:[0m
+[0;32mI (66) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (73) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (81) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (88) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (96) boot: End of partition table[0m
+[0;32mI (100) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0ed30h ( 60720) map[0m
+[0;32mI (119) esp_image: segment 1: paddr=0001ed58 vaddr=3fc94600 size=012c0h (  4800) load[0m
+[0;32mI (120) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=27bcch (162764) map[0m
+[0;32mI (154) esp_image: segment 3: paddr=00047bf4 vaddr=3fc958c0 size=03f98h ( 16280) load[0m
+[0;32mI (158) esp_image: segment 4: paddr=0004bb94 vaddr=40374000 size=105d4h ( 67028) load[0m
+[0;32mI (181) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (181) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (202) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (205) app_init: Project name:     hello_world[0m
+[0;32mI (211) app_init: App version:      7bee0ac-dirty[0m
+[0;32mI (216) app_init: Compile time:     Aug 21 2025 12:00:29[0m
+[0;32mI (222) app_init: ELF file SHA256:  e251f84c8...[0m
+[0;32mI (227) app_init: ESP-IDF:          v5.3.3[0m
+[0;32mI (232) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (237) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (242) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (247) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (254) heap_init: At 3FC9A1D0 len 0004F540 (317 KiB): RAM[0m
+[0;32mI (260) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (266) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (272) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (280) spi_flash: detected chip: generic[0m
+[0;32mI (283) spi_flash: flash io: dio[0m
+[0;33mW (287) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (300) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (311) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (318) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (325) main_task: Started on CPU0[0m
+[0;32mI (335) main_task: Calling app_main()[0m
+[0;32mI (335) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (335) cam_hal: cam init ok[0m
+[0;32mI (345) sccb: pin_sda 4 pin_scl 5[0m
+[0;32mI (345) sccb: sccb_i2c_port=1[0m
+[0;32mI (345) gpio: GPIO[38]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (385) camera: Camera PID=0x3660 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (385) camera: Detected OV3660 camera[0m
+[0;32mI (385) camera: Detected camera at address=0x3c[0m
+[0;32mI (705) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (705) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 6[0m
+[0;32mI (705) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 24, dma_buffer_size: 30720[0m
+[0;32mI (715) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 8, total_cnt: 10[0m
+[0;32mI (725) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;31mE (725) cam_hal: cam_dma_config(504): frame buffer malloc failed[0m
+[0;31mE (735) cam_hal: cam_config(594): cam_dma_config failed[0m
+[0;31mE (745) gdma: gdma_disconnect(314): no peripheral is connected to the channel[0m
+[0;31mE (755) camera: Camera config failed with error 0xffffffff[0m
+[0;31mE (755) example:take_picture: Camera Init Failed[0m
+[0;32mI (765) example:take_picture: Taking picture...[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x42009c29  PS      : 0x00060530  A0      : 0x82009bd0  A1      : 0x3fc9de70  
+A2      : 0x3fc9de90  A3      : 0x3c0340e4  A4      : 0x3c034164  A5      : 0x3fc9dec0  
+A6      : 0x3c035508  A7      : 0x00000000  A8      : 0x82009c29  A9      : 0x3fc9de50  
+A10     : 0x000002fd  A11     : 0x3c035508  A12     : 0x3c03554c  A13     : 0x000002fd  
+A14     : 0x3c035508  A15     : 0x00000010  SAR     : 0x00000004  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000004  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xfffffffa  
+
+
+Backtrace: 0x42009c26:0x3fc9de70 0x42009bcd:0x3fc9de90 0x42026c1f:0x3fc9dee0 0x4037c0ed:0x3fc9df10
+
+
+
+
+ELF file SHA256: e251f84c8
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375af8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x1870
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xce8
+load:0x403cb700,len:0x2ed8
+entry 0x403c8918
+[0;32mI (31) boot: ESP-IDF v5.3.3 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul 22 2025 11:25:27[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v0.2[0m
+[0;32mI (38) boot: efuse block revision: v1.3[0m
+[0;32mI (43) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (48) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (52) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (57) boot: Enabling RNG early entropy source...[0m
+[0;32mI (62) boot: Partition Table:[0m
+[0;32mI (66) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (73) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (81) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (88) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (96) boot: End of partition table[0m
+[0;32mI (100) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0ed30h ( 60720) map[0m
+[0;32mI (119) esp_image: segment 1: paddr=0001ed58 vaddr=3fc94600 size=012c0h (  4800) load[0m
+[0;32mI (120) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=27bcch (162764) map[0m
+[0;32mI (154) esp_image: segment 3: paddr=00047bf4 vaddr=3fc958c0 size=03f98h ( 16280) load[0m
+[0;32mI (158) esp_image: segment 4: paddr=0004bb94 vaddr=40374000 size=105d4h ( 67028) load[0m
+[0;32mI (181) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (181) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (202) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (205) app_init: Project name:     hello_world[0m
+[0;32mI (211) app_init: App version:      7bee0ac-dirty[0m
+[0;32mI (216) app_init: Compile time:     Aug 21 2025 12:00:29[0m
+[0;32mI (222) app_init: ELF file SHA256:  e251f84c8...[0m
+[0;32mI (227) app_init: ESP-IDF:          v5.3.3[0m
+[0;32mI (232) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (237) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (242) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (247) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (254) heap_init: At 3FC9A1D0 len 0004F540 (317 KiB): RAM[0m
+[0;32mI (260) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (266) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (272) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (280) spi_flash: detected chip: generic[0m
+[0;32mI (283) spi_flash: flash io: dio[0m
+[0;33mW (287) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (300) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (311) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (318) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (325) main_task: Started on CPU0[0m
+[0;32mI (335) main_task: Calling app_main()[0m
+[0;32mI (335) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (335) cam_hal: cam init ok[0m
+[0;32mI (345) sccb: pin_sda 4 pin_scl 5[0m
+[0;32mI (345) sccb: sccb_i2c_port=1[0m
+[0;32mI (345) gpio: GPIO[38]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (385) camera: Camera PID=0x3660 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (385) camera: Detected OV3660 camera[0m
+[0;32mI (385) camera: Detected camera at address=0x3c[0m
+[0;32mI (705) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (705) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 6[0m
+[0;32mI (705) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 24, dma_buffer_size: 30720[0m
+[0;32mI (715) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 8, total_cnt: 10[0m
+[0;32mI (725) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;31mE (725) cam_hal: cam_dma_config(504): frame buffer malloc failed[0m
+[0;31mE (735) cam_hal: cam_config(594): cam_dma_config failed[0m
+[0;31mE (745) gdma: gdma_disconnect(314): no peripheral is connected to the channel[0m
+[0;31mE (755) camera: Camera config failed with error 0xffffffff[0m
+[0;31mE (755) example:take_picture: Camera Init Failed[0m
+[0;32mI (765) example:take_picture: Taking picture...[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x42009c29  PS      : 0x00060530  A0      : 0x82009bd0  A1      : 0x3fc9de70  
+A2      : 0x3fc9de90  A3      : 0x3c0340e4  A4      : 0x3c034164  A5      : 0x3fc9dec0  
+A6      : 0x3c035508  A7      : 0x00000000  A8      : 0x82009c29  A9      : 0x3fc9de50  
+A10     : 0x000002fd  A11     : 0x3c035508  A12     : 0x3c03554c  A13     : 0x000002fd  
+A14     : 0x3c035508  A15     : 0x00000010  SAR     : 0x00000004  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000004  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xfffffffa  
+
+
+Backtrace: 0x42009c26:0x3fc9de70 0x42009bcd:0x3fc9de90 0x42026c1f:0x3fc9dee0 0x4037c0ed:0x3fc9df10
+
+
+
+
+ELF file SHA256: e251f84c8
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375af8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x1870
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xce8
+load:0x403cb700,len:0x2ed8
+entry 0x403c8918
+[0;32mI (31) boot: ESP-IDF v5.3.3 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul 22 2025 11:25:27[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v0.2[0m
+[0;32mI (38) boot: efuse block revision: v1.3[0m
+[0;32mI (43) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (48) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (52) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (57) boot: Enabling RNG early entropy source...[0m
+[0;32mI (62) boot: Partition Table:[0m
+[0;32mI (66) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (73) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (81) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (88) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (96) boot: End of partition table[0m
+[0;32mI (100) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0ed30h ( 60720) map[0m
+[0;32mI (119) esp_image: segment 1: paddr=0001ed58 vaddr=3fc94600 size=012c0h (  4800) load[0m
+[0;32mI (120) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=27bcch (162764) map[0m
+[0;32mI (154) esp_image: segment 3: paddr=00047bf4 vaddr=3fc958c0 size=03f98h ( 16280) load[0m
+[0;32mI (158) esp_image: segment 4: paddr=0004bb94 vaddr=40374000 size=105d4h ( 67028) load[0m
+[0;32mI (181) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (181) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (202) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (205) app_init: Project name:     hello_world[0m
+[0;32mI (211) app_init: App version:      7bee0ac-dirty[0m
+[0;32mI (216) app_init: Compile time:     Aug 21 2025 12:00:29[0m
+[0;32mI (222) app_init: ELF file SHA256:  e251f84c8...[0m
+[0;32mI (227) app_init: ESP-IDF:          v5.3.3[0m
+[0;32mI (232) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (237) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (242) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (247) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (254) heap_init: At 3FC9A1D0 len 0004F540 (317 KiB): RAM[0m
+[0;32mI (260) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (266) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (272) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (280) spi_flash: detected chip: generic[0m
+[0;32mI (283) spi_flash: flash io: dio[0m
+[0;33mW (287) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (300) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (311) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (318) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (325) main_task: Started on CPU0[0m
+[0;32mI (335) main_task: Calling app_main()[0m
+[0;32mI (335) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (335) cam_hal: cam init ok[0m
+[0;32mI (345) sccb: pin_sda 4 pin_scl 5[0m
+[0;32mI (345) sccb: sccb_i2c_port=1[0m
+[0;32mI (345) gpio: GPIO[38]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (385) camera: Camera PID=0x3660 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (385) camera: Detected OV3660 camera[0m
+[0;32mI (385) camera: Detected camera at address=0x3c[0m
+[0;32mI (705) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (705) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 6[0m
+[0;32mI (705) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 24, dma_buffer_size: 30720[0m
+[0;32mI (715) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 8, total_cnt: 10[0m
+[0;32mI (725) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;31mE (725) cam_hal: cam_dma_config(504): frame buffer malloc failed[0m
+[0;31mE (735) cam_hal: cam_config(594): cam_dma_config failed[0m
+[0;31mE (745) gdma: gdma_disconnect(314): no peripheral is connected to the channel[0m
+[0;31mE (755) camera: Camera config failed with error 0xffffffff[0m
+[0;31mE (755) example:take_picture: Camera Init Failed[0m
+[0;32mI (765) example:take_picture: Taking picture...[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x42009c29  PS      : 0x00060530  A0      : 0x82009bd0  A1      : 0x3fc9de70  
+A2      : 0x3fc9de90  A3      : 0x3c0340e4  A4      : 0x3c034164  A5      : 0x3fc9dec0  
+A6      : 0x3c035508  A7      : 0x00000000  A8      : 0x82009c29  A9      : 0x3fc9de50  
+A10     : 0x000002fd  A11     : 0x3c035508  A12     : 0x3c03554c  A13     : 0x000002fd  
+A14     : 0x3c035508  A15     : 0x00000010  SAR     : 0x00000004  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000004  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xfffffffa  
+
+
+Backtrace: 0x42009c26:0x3fc9de70 0x42009bcd:0x3fc9de90 0x42026c1f:0x3fc9dee0 0x4037c0ed:0x3fc9df10
+
+
+
+
+ELF file SHA256: e251f84c8
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375af8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x1870
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xce8
+load:0x403cb700,len:0x2ed8
+entry 0x403c8918
+[0;32mI (31) boot: ESP-IDF v5.3.3 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul 22 2025 11:25:27[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v0.2[0m
+[0;32mI (38) boot: efuse block revision: v1.3[0m
+[0;32mI (43) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (48) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (52) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (57) boot: Enabling RNG early entropy source...[0m
+[0;32mI (62) boot: Partition Table:[0m
+[0;32mI (66) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (73) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (81) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (88) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (96) boot: End of partition table[0m
+[0;32mI (100) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0ed30h ( 60720) map[0m
+[0;32mI (119) esp_image: segment 1: paddr=0001ed58 vaddr=3fc94600 size=012c0h (  4800) load[0m
+[0;32mI (120) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=27bcch (162764) map[0m
+[0;32mI (154) esp_image: segment 3: paddr=00047bf4 vaddr=3fc958c0 size=03f98h ( 16280) load[0m
+[0;32mI (158) esp_image: segment 4: paddr=0004bb94 vaddr=40374000 size=105d4h ( 67028) load[0m
+[0;32mI (181) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (181) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (202) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (205) app_init: Project name:     hello_world[0m
+[0;32mI (211) app_init: App version:      7bee0ac-dirty[0m
+[0;32mI (216) app_init: Compile time:     Aug 21 2025 12:00:29[0m
+[0;32mI (222) app_init: ELF file SHA256:  e251f84c8...[0m
+[0;32mI (227) app_init: ESP-IDF:          v5.3.3[0m
+[0;32mI (232) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (237) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (242) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (247) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (254) heap_init: At 3FC9A1D0 len 0004F540 (317 KiB): RAM[0m
+[0;32mI (260) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (266) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (272) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (280) spi_flash: detected chip: generic[0m
+[0;32mI (283) spi_flash: flash io: dio[0m
+[0;33mW (287) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (300) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (311) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (318) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (325) main_task: Started on CPU0[0m
+[0;32mI (335) main_task: Calling app_main()[0m
+[0;32mI (335) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (335) cam_hal: cam init ok[0m
+[0;32mI (345) sccb: pin_sda 4 pin_scl 5[0m
+[0;32mI (345) sccb: sccb_i2c_port=1[0m
+[0;32mI (345) gpio: GPIO[38]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (385) camera: Camera PID=0x3660 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (385) camera: Detected OV3660 camera[0m
+[0;32mI (385) camera: Detected camera at address=0x3c[0m
+[0;32mI (705) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (705) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 6[0m
+[0;32mI (705) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 24, dma_buffer_size: 30720[0m
+[0;32mI (715) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 8, total_cnt: 10[0m
+[0;32mI (725) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;31mE (725) cam_hal: cam_dma_config(504): frame buffer malloc failed[0m
+[0;31mE (735) cam_hal: cam_config(594): cam_dma_config failed[0m
+[0;31mE (745) gdma: gdma_disconnect(314): no peripheral is connected to the channel[0m
+[0;31mE (755) camera: Camera config failed with error 0xffffffff[0m
+[0;31mE (755) example:take_picture: Camera Init Failed[0m
+[0;32mI (765) example:take_picture: Taking picture...[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x42009c29  PS      : 0x00060530  A0      : 0x82009bd0  A1      : 0x3fc9de70  
+A2      : 0x3fc9de90  A3      : 0x3c0340e4  A4      : 0x3c034164  A5      : 0x3fc9dec0  
+A6      : 0x3c035508  A7      : 0x00000000  A8      : 0x82009c29  A9      : 0x3fc9de50  
+A10     : 0x000002fd  A11     : 0x3c035508  A12     : 0x3c03554c  A13     : 0x000002fd  
+A14     : 0x3c035508  A15     : 0x00000010  SAR     : 0x00000004  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000004  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xfffffffa  
+
+
+Backtrace: 0x42009c26:0x3fc9de70 0x42009bcd:0x3fc9de90 0x42026c1f:0x3fc9dee0 0x4037c0ed:0x3fc9df10
+
+
+
+
+ELF file SHA256: e251f84c8
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375af8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x1870
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xce8
+load:0x403cb700,len:0x2ed8
+entry 0x403c8918
+[0;32mI (31) boot: ESP-IDF v5.3.3 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul 22 2025 11:25:27[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v0.2[0m
+[0;32mI (38) boot: efuse block revision: v1.3[0m
+[0;32mI (43) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (48) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (52) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (57) boot: Enabling RNG early entropy source...[0m
+[0;32mI (62) boot: Partition Table:[0m
+[0;32mI (66) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (73) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (81) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (88) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (96) boot: End of partition table[0m
+[0;32mI (100) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0ed30h ( 60720) map[0m
+[0;32mI (119) esp_image: segment 1: paddr=0001ed58 vaddr=3fc94600 size=012c0h (  4800) load[0m
+[0;32mI (120) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=27bcch (162764) map[0m
+[0;32mI (154) esp_image: segment 3: paddr=00047bf4 vaddr=3fc958c0 size=03f98h ( 16280) load[0m
+[0;32mI (158) esp_image: segment 4: paddr=0004bb94 vaddr=40374000 size=105d4h ( 67028) load[0m
+[0;32mI (181) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (181) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (202) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (205) app_init: Project name:     hello_world[0m
+[0;32mI (211) app_init: App version:      7bee0ac-dirty[0m
+[0;32mI (216) app_init: Compile time:     Aug 21 2025 12:00:29[0m
+[0;32mI (222) app_init: ELF file SHA256:  e251f84c8...[0m
+[0;32mI (227) app_init: ESP-IDF:          v5.3.3[0m
+[0;32mI (232) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (237) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (242) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (247) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (254) heap_init: At 3FC9A1D0 len 0004F540 (317 KiB): RAM[0m
+[0;32mI (260) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (266) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (272) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (280) spi_flash: detected chip: generic[0m
+[0;32mI (283) spi_flash: flash io: dio[0m
+[0;33mW (287) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (300) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (311) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (318) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (325) main_task: Started on CPU0[0m
+[0;32mI (335) main_task: Calling app_main()[0m
+[0;32mI (335) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (335) cam_hal: cam init ok[0m
+[0;32mI (345) sccb: pin_sda 4 pin_scl 5[0m
+[0;32mI (345) sccb: sccb_i2c_port=1[0m
+[0;32mI (345) gpio: GPIO[38]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (385) camera: Camera PID=0x3660 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (385) camera: Detected OV3660 camera[0m
+[0;32mI (385) camera: Detected camera at address=0x3c[0m
+[0;32mI (705) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (705) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 6[0m
+[0;32mI (705) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 24, dma_buffer_size: 30720[0m
+[0;32mI (715) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 8, total_cnt: 10[0m
+[0;32mI (725) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;31mE (725) cam_hal: cam_dma_config(504): frame buffer malloc failed[0m
+[0;31mE (735) cam_hal: cam_config(594): cam_dma_config failed[0m
+[0;31mE (745) gdma: gdma_disconnect(314): no peripheral is connected to the channel[0m
+[0;31mE (755) camera: Camera config failed with error 0xffffffff[0m
+[0;31mE (755) example:take_picture: Camera Init Failed[0m
+[0;32mI (765) example:take_picture: Taking picture...[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x42009c29  PS      : 0x00060530  A0      : 0x82009bd0  A1      : 0x3fc9de70  
+A2      : 0x3fc9de90  A3      : 0x3c0340e4  A4      : 0x3c034164  A5      : 0x3fc9dec0  
+A6      : 0x3c035508  A7      : 0x00000000  A8      : 0x82009c29  A9      : 0x3fc9de50  
+A10     : 0x000002fd  A11     : 0x3c035508  A12     : 0x3c03554c  A13     : 0x000002fd  
+A14     : 0x3c035508  A15     : 0x00000010  SAR     : 0x00000004  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000004  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xfffffffa  
+
+
+Backtrace: 0x42009c26:0x3fc9de70 0x42009bcd:0x3fc9de90 0x42026c1f:0x3fc9dee0 0x4037c0ed:0x3fc9df10
+
+
+
+
+ELF file SHA256: e251f84c8
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375af8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x1870
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xce8
+load:0x403cb700,len:0x2ed8
+entry 0x403c8918
+[0;32mI (31) boot: ESP-IDF v5.3.3 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul 22 2025 11:25:27[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v0.2[0m
+[0;32mI (38) boot: efuse block revision: v1.3[0m
+[0;32mI (43) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (48) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (52) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (57) boot: Enabling RNG early entropy source...[0m
+[0;32mI (62) boot: Partition Table:[0m
+[0;32mI (66) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (73) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (81) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (88) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (96) boot: End of partition table[0m
+[0;32mI (100) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0ed30h ( 60720) map[0m
+[0;32mI (119) esp_image: segment 1: paddr=0001ed58 vaddr=3fc94600 size=012c0h (  4800) load[0m
+[0;32mI (120) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=27bcch (162764) map[0m
+[0;32mI (154) esp_image: segment 3: paddr=00047bf4 vaddr=3fc958c0 size=03f98h ( 16280) load[0m
+[0;32mI (158) esp_image: segment 4: paddr=0004bb94 vaddr=40374000 size=105d4h ( 67028) load[0m
+[0;32mI (181) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (181) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (202) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (205) app_init: Project name:     hello_world[0m
+[0;32mI (211) app_init: App version:      7bee0ac-dirty[0m
+[0;32mI (216) app_init: Compile time:     Aug 21 2025 12:00:29[0m
+[0;32mI (222) app_init: ELF file SHA256:  e251f84c8...[0m
+[0;32mI (227) app_init: ESP-IDF:          v5.3.3[0m
+[0;32mI (232) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (237) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (242) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (247) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (254) heap_init: At 3FC9A1D0 len 0004F540 (317 KiB): RAM[0m
+[0;32mI (260) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (266) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (272) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (280) spi_flash: detected chip: generic[0m
+[0;32mI (283) spi_flash: flash io: dio[0m
+[0;33mW (287) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (300) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (311) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (318) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (325) main_task: Started on CPU0[0m
+[0;32mI (335) main_task: Calling app_main()[0m
+[0;32mI (335) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (335) cam_hal: cam init ok[0m
+[0;32mI (345) sccb: pin_sda 4 pin_scl 5[0m
+[0;32mI (345) sccb: sccb_i2c_port=1[0m
+[0;32mI (345) gpio: GPIO[38]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (385) camera: Camera PID=0x3660 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (385) camera: Detected OV3660 camera[0m
+[0;32mI (385) camera: Detected camera at address=0x3c[0m
+[0;32mI (705) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (705) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 6[0m
+[0;32mI (705) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 24, dma_buffer_size: 30720[0m
+[0;32mI (715) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 8, total_cnt: 10[0m
+[0;32mI (725) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;31mE (725) cam_hal: cam_dma_config(504): frame buffer malloc failed[0m
+[0;31mE (735) cam_hal: cam_config(594): cam_dma_config failed[0m
+[0;31mE (745) gdma: gdma_disconnect(314): no peripheral is connected to the channel[0m
+[0;31mE (755) camera: Camera config failed with error 0xffffffff[0m
+[0;31mE (755) example:take_picture: Camera Init Failed[0m
+[0;32mI (765) example:take_picture: Taking picture...[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x42009c29  PS      : 0x00060530  A0      : 0x82009bd0  A1      : 0x3fc9de70  
+A2      : 0x3fc9de90  A3      : 0x3c0340e4  A4      : 0x3c034164  A5      : 0x3fc9dec0  
+A6      : 0x3c035508  A7      : 0x00000000  A8      : 0x82009c29  A9      : 0x3fc9de50  
+A10     : 0x000002fd  A11     : 0x3c035508  A12     : 0x3c03554c  A13     : 0x000002fd  
+A14     : 0x3c035508  A15     : 0x00000010  SAR     : 0x00000004  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000004  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xfffffffa  
+
+
+Backtrace: 0x42009c26:0x3fc9de70 0x42009bcd:0x3fc9de90 0x42026c1f:0x3fc9dee0 0x4037c0ed:0x3fc9df10
+
+
+
+
+ELF file SHA256: e251f84c8
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375af8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x1870
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xce8
+load:0x403cb700,len:0x2ed8
+entry 0x403c8918
+[0;32mI (31) boot: ESP-IDF v5.3.3 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul 22 2025 11:25:27[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v0.2[0m
+[0;32mI (38) boot: efuse block revision: v1.3[0m
+[0;32mI (43) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (48) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (52) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (57) boot: Enabling RNG early entropy source...[0m
+[0;32mI (62) boot: Partition Table:[0m
+[0;32mI (66) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (73) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (81) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (88) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (96) boot: End of partition table[0m
+[0;32mI (100) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0ed30h ( 60720) map[0m
+[0;32mI (119) esp_image: segment 1: paddr=0001ed58 vaddr=3fc94600 size=012c0h (  4800) load[0m
+[0;32mI (120) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=27bcch (162764) map[0m
+[0;32mI (154) esp_image: segment 3: paddr=00047bf4 vaddr=3fc958c0 size=03f98h ( 16280) load[0m
+[0;32mI (158) esp_image: segment 4: paddr=0004bb94 vaddr=40374000 size=105d4h ( 67028) load[0m
+[0;32mI (181) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (181) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (202) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (205) app_init: Project name:     hello_world[0m
+[0;32mI (211) app_init: App version:      7bee0ac-dirty[0m
+[0;32mI (216) app_init: Compile time:     Aug 21 2025 12:00:29[0m
+[0;32mI (222) app_init: ELF file SHA256:  e251f84c8...[0m
+[0;32mI (227) app_init: ESP-IDF:          v5.3.3[0m
+[0;32mI (232) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (237) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (242) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (247) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (254) heap_init: At 3FC9A1D0 len 0004F540 (317 KiB): RAM[0m
+[0;32mI (260) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (266) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (272) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (280) spi_flash: detected chip: generic[0m
+[0;32mI (283) spi_flash: flash io: dio[0m
+[0;33mW (287) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (300) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (311) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (318) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (325) main_task: Started on CPU0[0m
+[0;32mI (335) main_task: Calling app_main()[0m
+[0;32mI (335) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (335) cam_hal: cam init ok[0m
+[0;32mI (345) sccb: pin_sda 4 pin_scl 5[0m
+[0;32mI (345) sccb: sccb_i2c_port=1[0m
+[0;32mI (345) gpio: GPIO[38]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (385) camera: Camera PID=0x3660 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (385) camera: Detected OV3660 camera[0m
+[0;32mI (385) camera: Detected camera at address=0x3c[0m
+[0;32mI (705) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (705) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 6[0m
+[0;32mI (705) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 24, dma_buffer_size: 30720[0m
+[0;32mI (715) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 8, total_cnt: 10[0m
+[0;32mI (725) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;31mE (725) cam_hal: cam_dma_config(504): frame buffer malloc failed[0m
+[0;31mE (735) cam_hal: cam_config(594): cam_dma_config failed[0m
+[0;31mE (745) gdma: gdma_disconnect(314): no peripheral is connected to the channel[0m
+[0;31mE (755) camera: Camera config failed with error 0xffffffff[0m
+[0;31mE (755) example:take_picture: Camera Init Failed[0m
+[0;32mI (765) example:take_picture: Taking picture...[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x42009c29  PS      : 0x00060530  A0      : 0x82009bd0  A1      : 0x3fc9de70  
+A2      : 0x3fc9de90  A3      : 0x3c0340e4  A4      : 0x3c034164  A5      : 0x3fc9dec0  
+A6      : 0x3c035508  A7      : 0x00000000  A8      : 0x82009c29  A9      : 0x3fc9de50  
+A10     : 0x000002fd  A11     : 0x3c035508  A12     : 0x3c03554c  A13     : 0x000002fd  
+A14     : 0x3c035508  A15     : 0x00000010  SAR     : 0x00000004  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000004  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xfffffffa  
+
+
+Backtrace: 0x42009c26:0x3fc9de70 0x42009bcd:0x3fc9de90 0x42026c1f:0x3fc9dee0 0x4037c0ed:0x3fc9df10
+
+
+
+
+ELF file SHA256: e251f84c8
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375af8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x1870
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xce8
+load:0x403cb700,len:0x2ed8
+entry 0x403c8918
+[0;32mI (31) boot: ESP-IDF v5.3.3 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul 22 2025 11:25:27[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v0.2[0m
+[0;32mI (38) boot: efuse block revision: v1.3[0m
+[0;32mI (43) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (48) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (52) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (57) boot: Enabling RNG early entropy source...[0m
+[0;32mI (62) boot: Partition Table:[0m
+[0;32mI (66) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (73) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (81) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (88) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (96) boot: End of partition table[0m
+[0;32mI (100) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0ed30h ( 60720) map[0m
+[0;32mI (119) esp_image: segment 1: paddr=0001ed58 vaddr=3fc94600 size=012c0h (  4800) load[0m
+[0;32mI (120) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=27bcch (162764) map[0m
+[0;32mI (154) esp_image: segment 3: paddr=00047bf4 vaddr=3fc958c0 size=03f98h ( 16280) load[0m
+[0;32mI (158) esp_image: segment 4: paddr=0004bb94 vaddr=40374000 size=105d4h ( 67028) load[0m
+[0;32mI (181) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (181) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (202) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (205) app_init: Project name:     hello_world[0m
+[0;32mI (211) app_init: App version:      7bee0ac-dirty[0m
+[0;32mI (216) app_init: Compile time:     Aug 21 2025 12:00:29[0m
+[0;32mI (222) app_init: ELF file SHA256:  e251f84c8...[0m
+[0;32mI (227) app_init: ESP-IDF:          v5.3.3[0m
+[0;32mI (232) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (237) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (242) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (247) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (254) heap_init: At 3FC9A1D0 len 0004F540 (317 KiB): RAM[0m
+[0;32mI (260) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (266) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (272) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (280) spi_flash: detected chip: generic[0m
+[0;32mI (283) spi_flash: flash io: dio[0m
+[0;33mW (287) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (300) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (311) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (318) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (325) main_task: Started on CPU0[0m
+[0;32mI (335) main_task: Calling app_main()[0m
+[0;32mI (335) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (335) cam_hal: cam init ok[0m
+[0;32mI (345) sccb: pin_sda 4 pin_scl 5[0m
+[0;32mI (345) sccb: sccb_i2c_port=1[0m
+[0;32mI (345) gpio: GPIO[38]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (385) camera: Camera PID=0x3660 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (385) camera: Detected OV3660 camera[0m
+[0;32mI (385) camera: Detected camera at address=0x3c[0m
+[0;32mI (705) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (705) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 6[0m
+[0;32mI (705) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 24, dma_buffer_size: 30720[0m
+[0;32mI (715) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 8, total_cnt: 10[0m
+[0;32mI (725) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;31mE (725) cam_hal: cam_dma_config(504): frame buffer malloc failed[0m
+[0;31mE (735) cam_hal: cam_config(594): cam_dma_config failed[0m
+[0;31mE (745) gdma: gdma_disconnect(314): no peripheral is connected to the channel[0m
+[0;31mE (755) camera: Camera config failed with error 0xffffffff[0m
+[0;31mE (755) example:take_picture: Camera Init Failed[0m
+[0;32mI (765) example:take_picture: Taking picture...[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x42009c29  PS      : 0x00060530  A0      : 0x82009bd0  A1      : 0x3fc9de70  
+A2      : 0x3fc9de90  A3      : 0x3c0340e4  A4      : 0x3c034164  A5      : 0x3fc9dec0  
+A6      : 0x3c035508  A7      : 0x00000000  A8      : 0x82009c29  A9      : 0x3fc9de50  
+A10     : 0x000002fd  A11     : 0x3c035508  A12     : 0x3c03554c  A13     : 0x000002fd  
+A14     : 0x3c035508  A15     : 0x00000010  SAR     : 0x00000004  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000004  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xfffffffa  
+
+
+Backtrace: 0x42009c26:0x3fc9de70 0x42009bcd:0x3fc9de90 0x42026c1f:0x3fc9dee0 0x4037c0ed:0x3fc9df10
+
+
+
+
+ELF file SHA256: e251f84c8
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375af8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x1870
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xce8
+load:0x403cb700,len:0x2ed8
+entry 0x403c8918
+[0;32mI (31) boot: ESP-IDF v5.3.3 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul 22 2025 11:25:27[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v0.2[0m
+[0;32mI (38) boot: efuse block revision: v1.3[0m
+[0;32mI (43) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (48) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (52) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (57) boot: Enabling RNG early entropy source...[0m
+[0;32mI (62) boot: Partition Table:[0m
+[0;32mI (66) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (73) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (81) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (88) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (96) boot: End of partition table[0m
+[0;32mI (100) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0ed30h ( 60720) map[0m
+[0;32mI (119) esp_image: segment 1: paddr=0001ed58 vaddr=3fc94600 size=012c0h (  4800) load[0m
+[0;32mI (120) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=27bcch (162764) map[0m
+[0;32mI (154) esp_image: segment 3: paddr=00047bf4 vaddr=3fc958c0 size=03f98h ( 16280) load[0m
+[0;32mI (158) esp_image: segment 4: paddr=0004bb94 vaddr=40374000 size=105d4h ( 67028) load[0m
+[0;32mI (181) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (181) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (202) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (205) app_init: Project name:     hello_world[0m
+[0;32mI (211) app_init: App version:      7bee0ac-dirty[0m
+[0;32mI (216) app_init: Compile time:     Aug 21 2025 12:00:29[0m
+[0;32mI (222) app_init: ELF file SHA256:  e251f84c8...[0m
+[0;32mI (227) app_init: ESP-IDF:          v5.3.3[0m
+[0;32mI (232) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (237) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (242) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (247) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (254) heap_init: At 3FC9A1D0 len 0004F540 (317 KiB): RAM[0m
+[0;32mI (260) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (266) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (272) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (280) spi_flash: detected chip: generic[0m
+[0;32mI (283) spi_flash: flash io: dio[0m
+[0;33mW (287) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (300) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (311) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (318) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (325) main_task: Started on CPU0[0m
+[0;32mI (335) main_task: Calling app_main()[0m
+[0;32mI (335) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (335) cam_hal: cam init ok[0m
+[0;32mI (345) sccb: pin_sda 4 pin_scl 5[0m
+[0;32mI (345) sccb: sccb_i2c_port=1[0m
+[0;32mI (345) gpio: GPIO[38]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (385) camera: Camera PID=0x3660 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (385) camera: Detected OV3660 camera[0m
+[0;32mI (385) camera: Detected camera at address=0x3c[0m
+[0;32mI (705) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (705) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 6[0m
+[0;32mI (705) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 24, dma_buffer_size: 30720[0m
+[0;32mI (715) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 8, total_cnt: 10[0m
+[0;32mI (725) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;31mE (725) cam_hal: cam_dma_config(504): frame buffer malloc failed[0m
+[0;31mE (735) cam_hal: cam_config(594): cam_dma_config failed[0m
+[0;31mE (745) gdma: gdma_disconnect(314): no peripheral is connected to the channel[0m
+[0;31mE (755) camera: Camera config failed with error 0xffffffff[0m
+[0;31mE (755) example:take_picture: Camera Init Failed[0m
+[0;32mI (765) example:take_picture: Taking picture...[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x42009c29  PS      : 0x00060530  A0      : 0x82009bd0  A1      : 0x3fc9de70  
+A2      : 0x3fc9de90  A3      : 0x3c0340e4  A4      : 0x3c034164  A5      : 0x3fc9dec0  
+A6      : 0x3c035508  A7      : 0x00000000  A8      : 0x82009c29  A9      : 0x3fc9de50  
+A10     : 0x000002fd  A11     : 0x3c035508  A12     : 0x3c03554c  A13     : 0x000002fd  
+A14     : 0x3c035508  A15     : 0x00000010  SAR     : 0x00000004  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000004  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xfffffffa  
+
+
+Backtrace: 0x42009c26:0x3fc9de70 0x42009bcd:0x3fc9de90 0x42026c1f:0x3fc9dee0 0x4037c0ed:0x3fc9df10
+
+
+
+
+ELF file SHA256: e251f84c8
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375af8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x1870
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xce8
+load:0x403cb700,len:0x2ed8
+entry 0x403c8918
+[0;32mI (31) boot: ESP-IDF v5.3.3 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul 22 2025 11:25:27[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v0.2[0m
+[0;32mI (38) boot: efuse block revision: v1.3[0m
+[0;32mI (43) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (48) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (52) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (57) boot: Enabling RNG early entropy source...[0m
+[0;32mI (62) boot: Partition Table:[0m
+[0;32mI (66) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (73) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (81) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (88) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (96) boot: End of partition table[0m
+[0;32mI (100) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0ed30h ( 60720) map[0m
+[0;32mI (119) esp_image: segment 1: paddr=0001ed58 vaddr=3fc94600 size=012c0h (  4800) load[0m
+[0;32mI (120) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=27bcch (162764) map[0m
+[0;32mI (154) esp_image: segment 3: paddr=00047bf4 vaddr=3fc958c0 size=03f98h ( 16280) load[0m
+[0;32mI (158) esp_image: segment 4: paddr=0004bb94 vaddr=40374000 size=105d4h ( 67028) load[0m
+[0;32mI (181) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (181) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (202) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (205) app_init: Project name:     hello_world[0m
+[0;32mI (211) app_init: App version:      7bee0ac-dirty[0m
+[0;32mI (216) app_init: Compile time:     Aug 21 2025 12:00:29[0m
+[0;32mI (222) app_init: ELF file SHA256:  e251f84c8...[0m
+[0;32mI (227) app_init: ESP-IDF:          v5.3.3[0m
+[0;32mI (232) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (237) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (242) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (247) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (254) heap_init: At 3FC9A1D0 len 0004F540 (317 KiB): RAM[0m
+[0;32mI (260) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (266) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (272) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (280) spi_flash: detected chip: generic[0m
+[0;32mI (283) spi_flash: flash io: dio[0m
+[0;33mW (287) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (300) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (311) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (318) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (325) main_task: Started on CPU0[0m
+[0;32mI (335) main_task: Calling app_main()[0m
+[0;32mI (335) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (335) cam_hal: cam init ok[0m
+[0;32mI (345) sccb: pin_sda 4 pin_scl 5[0m
+[0;32mI (345) sccb: sccb_i2c_port=1[0m
+[0;32mI (345) gpio: GPIO[38]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (385) camera: Camera PID=0x3660 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (385) camera: Detected OV3660 camera[0m
+[0;32mI (385) camera: Detected camera at address=0x3c[0m
+[0;32mI (705) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (705) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 6[0m
+[0;32mI (705) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 24, dma_buffer_size: 30720[0m
+[0;32mI (715) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 8, total_cnt: 10[0m
+[0;32mI (725) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;31mE (725) cam_hal: cam_dma_config(504): frame buffer malloc failed[0m
+[0;31mE (735) cam_hal: cam_config(594): cam_dma_config failed[0m
+[0;31mE (745) gdma: gdma_disconnect(314): no peripheral is connected to the channel[0m
+[0;31mE (755) camera: Camera config failed with error 0xffffffff[0m
+[0;31mE (755) example:take_picture: Camera Init Failed[0m
+[0;32mI (765) example:take_picture: Taking picture...[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x42009c29  PS      : 0x00060530  A0      : 0x82009bd0  A1      : 0x3fc9de70  
+A2      : 0x3fc9de90  A3      : 0x3c0340e4  A4      : 0x3c034164  A5      : 0x3fc9dec0  
+A6      : 0x3c035508  A7      : 0x00000000  A8      : 0x82009c29  A9      : 0x3fc9de50  
+A10     : 0x000002fd  A11     : 0x3c035508  A12     : 0x3c03554c  A13     : 0x000002fd  
+A14     : 0x3c035508  A15     : 0x00000010  SAR     : 0x00000004  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000004  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xfffffffa  
+
+
+Backtrace: 0x42009c26:0x3fc9de70 0x42009bcd:0x3fc9de90 0x42026c1f:0x3fc9dee0 0x4037c0ed:0x3fc9df10
+
+
+
+
+ELF file SHA256: e251f84c8
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375af8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x1870
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xce8
+load:0x403cb700,len:0x2ed8
+entry 0x403c8918
+[0;32mI (31) boot: ESP-IDF v5.3.3 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul 22 2025 11:25:27[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v0.2[0m
+[0;32mI (38) boot: efuse block revision: v1.3[0m
+[0;32mI (43) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (48) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (52) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (57) boot: Enabling RNG early entropy source...[0m
+[0;32mI (62) boot: Partition Table:[0m
+[0;32mI (66) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (73) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (81) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (88) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (96) boot: End of partition table[0m
+[0;32mI (100) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0ed30h ( 60720) map[0m
+[0;32mI (119) esp_image: segment 1: paddr=0001ed58 vaddr=3fc94600 size=012c0h (  4800) load[0m
+[0;32mI (120) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=27bcch (162764) map[0m
+[0;32mI (154) esp_image: segment 3: paddr=00047bf4 vaddr=3fc958c0 size=03f98h ( 16280) load[0m
+[0;32mI (158) esp_image: segment 4: paddr=0004bb94 vaddr=40374000 size=105d4h ( 67028) load[0m
+[0;32mI (181) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (181) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (202) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (205) app_init: Project name:     hello_world[0m
+[0;32mI (211) app_init: App version:      7bee0ac-dirty[0m
+[0;32mI (216) app_init: Compile time:     Aug 21 2025 12:00:29[0m
+[0;32mI (222) app_init: ELF file SHA256:  e251f84c8...[0m
+[0;32mI (227) app_init: ESP-IDF:          v5.3.3[0m
+[0;32mI (232) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (237) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (242) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (247) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (254) heap_init: At 3FC9A1D0 len 0004F540 (317 KiB): RAM[0m
+[0;32mI (260) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (266) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (272) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (280) spi_flash: detected chip: generic[0m
+[0;32mI (283) spi_flash: flash io: dio[0m
+[0;33mW (287) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (300) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (311) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (318) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (325) main_task: Started on CPU0[0m
+[0;32mI (335) main_task: Calling app_main()[0m
+[0;32mI (335) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (335) cam_hal: cam init ok[0m
+[0;32mI (345) sccb: pin_sda 4 pin_scl 5[0m
+[0;32mI (345) sccb: sccb_i2c_port=1[0m
+[0;32mI (345) gpio: GPIO[38]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (385) camera: Camera PID=0x3660 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (385) camera: Detected OV3660 camera[0m
+[0;32mI (385) camera: Detected camera at address=0x3c[0m
+[0;32mI (705) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (705) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 6[0m
+[0;32mI (705) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 24, dma_buffer_size: 30720[0m
+[0;32mI (715) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 8, total_cnt: 10[0m
+[0;32mI (725) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;31mE (725) cam_hal: cam_dma_config(504): frame buffer malloc failed[0m
+[0;31mE (735) cam_hal: cam_config(594): cam_dma_config failed[0m
+[0;31mE (745) gdma: gdma_disconnect(314): no peripheral is connected to the channel[0m
+[0;31mE (755) camera: Camera config failed with error 0xffffffff[0m
+[0;31mE (755) example:take_picture: Camera Init Failed[0m
+[0;32mI (765) example:take_picture: Taking picture...[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x42009c29  PS      : 0x00060530  A0      : 0x82009bd0  A1      : 0x3fc9de70  
+A2      : 0x3fc9de90  A3      : 0x3c0340e4  A4      : 0x3c034164  A5      : 0x3fc9dec0  
+A6      : 0x3c035508  A7      : 0x00000000  A8      : 0x82009c29  A9      : 0x3fc9de50  
+A10     : 0x000002fd  A11     : 0x3c035508  A12     : 0x3c03554c  A13     : 0x000002fd  
+A14     : 0x3c035508  A15     : 0x00000010  SAR     : 0x00000004  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000004  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xfffffffa  
+
+
+Backtrace: 0x42009c26:0x3fc9de70 0x42009bcd:0x3fc9de90 0x42026c1f:0x3fc9dee0 0x4037c0ed:0x3fc9df10
+
+
+
+
+ELF file SHA256: e251f84c8
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375af8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x1870
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xce8
+load:0x403cb700,len:0x2ed8
+entry 0x403c8918
+[0;32mI (31) boot: ESP-IDF v5.3.3 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul 22 2025 11:25:27[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v0.2[0m
+[0;32mI (38) boot: efuse block revision: v1.3[0m
+[0;32mI (43) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (48) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (52) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (57) boot: Enabling RNG early entropy source...[0m
+[0;32mI (62) boot: Partition Table:[0m
+[0;32mI (66) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (73) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (81) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (88) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (96) boot: End of partition table[0m
+[0;32mI (100) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0ed30h ( 60720) map[0m
+[0;32mI (119) esp_image: segment 1: paddr=0001ed58 vaddr=3fc94600 size=012c0h (  4800) load[0m
+[0;32mI (120) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=27bcch (162764) map[0m
+[0;32mI (154) esp_image: segment 3: paddr=00047bf4 vaddr=3fc958c0 size=03f98h ( 16280) load[0m
+[0;32mI (158) esp_image: segment 4: paddr=0004bb94 vaddr=40374000 size=105d4h ( 67028) load[0m
+[0;32mI (181) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (181) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (202) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (205) app_init: Project name:     hello_world[0m
+[0;32mI (211) app_init: App version:      7bee0ac-dirty[0m
+[0;32mI (216) app_init: Compile time:     Aug 21 2025 12:00:29[0m
+[0;32mI (222) app_init: ELF file SHA256:  e251f84c8...[0m
+[0;32mI (227) app_init: ESP-IDF:          v5.3.3[0m
+[0;32mI (232) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (237) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (242) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (247) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (254) heap_init: At 3FC9A1D0 len 0004F540 (317 KiB): RAM[0m
+[0;32mI (260) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (266) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (272) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (280) spi_flash: detected chip: generic[0m
+[0;32mI (283) spi_flash: flash io: dio[0m
+[0;33mW (287) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (300) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (311) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (318) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (325) main_task: Started on CPU0[0m
+[0;32mI (335) main_task: Calling app_main()[0m
+[0;32mI (335) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (335) cam_hal: cam init ok[0m
+[0;32mI (345) sccb: pin_sda 4 pin_scl 5[0m
+[0;32mI (345) sccb: sccb_i2c_port=1[0m
+[0;32mI (345) gpio: GPIO[38]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (385) camera: Camera PID=0x3660 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (385) camera: Detected OV3660 camera[0m
+[0;32mI (385) camera: Detected camera at address=0x3c[0m
+[0;32mI (705) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (705) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 6[0m
+[0;32mI (705) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 24, dma_buffer_size: 30720[0m
+[0;32mI (715) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 8, total_cnt: 10[0m
+[0;32mI (725) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;31mE (725) cam_hal: cam_dma_config(504): frame buffer malloc failed[0m
+[0;31mE (735) cam_hal: cam_config(594): cam_dma_config failed[0m
+[0;31mE (745) gdma: gdma_disconnect(314): no peripheral is connected to the channel[0m
+[0;31mE (755) camera: Camera config failed with error 0xffffffff[0m
+[0;31mE (755) example:take_picture: Camera Init Failed[0m
+[0;32mI (765) example:take_picture: Taking picture...[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x42009c29  PS      : 0x00060530  A0      : 0x82009bd0  A1      : 0x3fc9de70  
+A2      : 0x3fc9de90  A3      : 0x3c0340e4  A4      : 0x3c034164  A5      : 0x3fc9dec0  
+A6      : 0x3c035508  A7      : 0x00000000  A8      : 0x82009c29  A9      : 0x3fc9de50  
+A10     : 0x000002fd  A11     : 0x3c035508  A12     : 0x3c03554c  A13     : 0x000002fd  
+A14     : 0x3c035508  A15     : 0x00000010  SAR     : 0x00000004  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000004  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xfffffffa  
+
+
+Backtrace: 0x42009c26:0x3fc9de70 0x42009bcd:0x3fc9de90 0x42026c1f:0x3fc9dee0 0x4037c0ed:0x3fc9df10
+
+
+
+
+ELF file SHA256: e251f84c8
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375af8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x1870
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xce8
+load:0x403cb700,len:0x2ed8
+entry 0x403c8918
+[0;32mI (31) boot: ESP-IDF v5.3.3 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul 22 2025 11:25:27[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v0.2[0m
+[0;32mI (38) boot: efuse block revision: v1.3[0m
+[0;32mI (43) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (48) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (52) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (57) boot: Enabling RNG early entropy source...[0m
+[0;32mI (62) boot: Partition Table:[0m
+[0;32mI (66) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (73) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (81) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (88) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (96) boot: End of partition table[0m
+[0;32mI (100) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0ed30h ( 60720) map[0m
+[0;32mI (119) esp_image: segment 1: paddr=0001ed58 vaddr=3fc94600 size=012c0h (  4800) load[0m
+[0;32mI (120) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=27bcch (162764) map[0m
+[0;32mI (154) esp_image: segment 3: paddr=00047bf4 vaddr=3fc958c0 size=03f98h ( 16280) load[0m
+[0;32mI (158) esp_image: segment 4: paddr=0004bb94 vaddr=40374000 size=105d4h ( 67028) load[0m
+[0;32mI (181) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (181) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (202) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (205) app_init: Project name:     hello_world[0m
+[0;32mI (211) app_init: App version:      7bee0ac-dirty[0m
+[0;32mI (216) app_init: Compile time:     Aug 21 2025 12:00:29[0m
+[0;32mI (222) app_init: ELF file SHA256:  e251f84c8...[0m
+[0;32mI (227) app_init: ESP-IDF:          v5.3.3[0m
+[0;32mI (232) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (237) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (242) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (247) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (254) heap_init: At 3FC9A1D0 len 0004F540 (317 KiB): RAM[0m
+[0;32mI (260) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (266) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (272) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (280) spi_flash: detected chip: generic[0m
+[0;32mI (283) spi_flash: flash io: dio[0m
+[0;33mW (287) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (300) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (311) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (318) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (325) main_task: Started on CPU0[0m
+[0;32mI (335) main_task: Calling app_main()[0m
+[0;32mI (335) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (335) cam_hal: cam init ok[0m
+[0;32mI (345) sccb: pin_sda 4 pin_scl 5[0m
+[0;32mI (345) sccb: sccb_i2c_port=1[0m
+[0;32mI (345) gpio: GPIO[38]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (385) camera: Camera PID=0x3660 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (385) camera: Detected OV3660 camera[0m
+[0;32mI (385) camera: Detected camera at address=0x3c[0m
+[0;32mI (705) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (705) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 6[0m
+[0;32mI (705) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 24, dma_buffer_size: 30720[0m
+[0;32mI (715) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 8, total_cnt: 10[0m
+[0;32mI (725) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;31mE (725) cam_hal: cam_dma_config(504): frame buffer malloc failed[0m
+[0;31mE (735) cam_hal: cam_config(594): cam_dma_config failed[0m
+[0;31mE (745) gdma: gdma_disconnect(314): no peripheral is connected to the channel[0m
+[0;31mE (755) camera: Camera config failed with error 0xffffffff[0m
+[0;31mE (755) example:take_picture: Camera Init Failed[0m
+[0;32mI (765) example:take_picture: Taking picture...[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x42009c29  PS      : 0x00060530  A0      : 0x82009bd0  A1      : 0x3fc9de70  
+A2      : 0x3fc9de90  A3      : 0x3c0340e4  A4      : 0x3c034164  A5      : 0x3fc9dec0  
+A6      : 0x3c035508  A7      : 0x00000000  A8      : 0x82009c29  A9      : 0x3fc9de50  
+A10     : 0x000002fd  A11     : 0x3c035508  A12     : 0x3c03554c  A13     : 0x000002fd  
+A14     : 0x3c035508  A15     : 0x00000010  SAR     : 0x00000004  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000004  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xfffffffa  
+
+
+Backtrace: 0x42009c26:0x3fc9de70 0x42009bcd:0x3fc9de90 0x42026c1f:0x3fc9dee0 0x4037c0ed:0x3fc9df10
+
+
+
+
+ELF file SHA256: e251f84c8
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375af8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x1870
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xce8
+load:0x403cb700,len:0x2ed8
+entry 0x403c8918
+[0;32mI (31) boot: ESP-IDF v5.3.3 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul 22 2025 11:25:27[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v0.2[0m
+[0;32mI (38) boot: efuse block revision: v1.3[0m
+[0;32mI (43) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (48) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (52) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (57) boot: Enabling RNG early entropy source...[0m
+[0;32mI (62) boot: Partition Table:[0m
+[0;32mI (66) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (73) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (81) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (88) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (96) boot: End of partition table[0m
+[0;32mI (100) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0ed30h ( 60720) map[0m
+[0;32mI (119) esp_image: segment 1: paddr=0001ed58 vaddr=3fc94600 size=012c0h (  4800) load[0m
+[0;32mI (120) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=27bcch (162764) map[0m
+[0;32mI (154) esp_image: segment 3: paddr=00047bf4 vaddr=3fc958c0 size=03f98h ( 16280) load[0m
+[0;32mI (158) esp_image: segment 4: paddr=0004bb94 vaddr=40374000 size=105d4h ( 67028) load[0m
+[0;32mI (181) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (181) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (202) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (205) app_init: Project name:     hello_world[0m
+[0;32mI (211) app_init: App version:      7bee0ac-dirty[0m
+[0;32mI (216) app_init: Compile time:     Aug 21 2025 12:00:29[0m
+[0;32mI (222) app_init: ELF file SHA256:  e251f84c8...[0m
+[0;32mI (227) app_init: ESP-IDF:          v5.3.3[0m
+[0;32mI (232) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (237) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (242) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (247) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (254) heap_init: At 3FC9A1D0 len 0004F540 (317 KiB): RAM[0m
+[0;32mI (260) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (266) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (272) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (280) spi_flash: detected chip: generic[0m
+[0;32mI (283) spi_flash: flash io: dio[0m
+[0;33mW (287) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (300) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (311) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (318) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (325) main_task: Started on CPU0[0m
+[0;32mI (335) main_task: Calling app_main()[0m
+[0;32mI (335) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (335) cam_hal: cam init ok[0m
+[0;32mI (345) sccb: pin_sda 4 pin_scl 5[0m
+[0;32mI (345) sccb: sccb_i2c_port=1[0m
+[0;32mI (345) gpio: GPIO[38]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (385) camera: Camera PID=0x3660 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (385) camera: Detected OV3660 camera[0m
+[0;32mI (385) camera: Detected camera at address=0x3c[0m
+[0;32mI (705) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (705) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 6[0m
+[0;32mI (705) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 24, dma_buffer_size: 30720[0m
+[0;32mI (715) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 8, total_cnt: 10[0m
+[0;32mI (725) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;31mE (725) cam_hal: cam_dma_config(504): frame buffer malloc failed[0m
+[0;31mE (735) cam_hal: cam_config(594): cam_dma_config failed[0m
+[0;31mE (745) gdma: gdma_disconnect(314): no peripheral is connected to the channel[0m
+[0;31mE (755) camera: Camera config failed with error 0xffffffff[0m
+[0;31mE (755) example:take_picture: Camera Init Failed[0m
+[0;32mI (765) example:take_picture: Taking picture...[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x42009c29  PS      : 0x00060530  A0      : 0x82009bd0  A1      : 0x3fc9de70  
+A2      : 0x3fc9de90  A3      : 0x3c0340e4  A4      : 0x3c034164  A5      : 0x3fc9dec0  
+A6      : 0x3c035508  A7      : 0x00000000  A8      : 0x82009c29  A9      : 0x3fc9de50  
+A10     : 0x000002fd  A11     : 0x3c035508  A12     : 0x3c03554c  A13     : 0x000002fd  
+A14     : 0x3c035508  A15     : 0x00000010  SAR     : 0x00000004  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000004  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xfffffffa  
+
+
+Backtrace: 0x42009c26:0x3fc9de70 0x42009bcd:0x3fc9de90 0x42026c1f:0x3fc9dee0 0x4037c0ed:0x3fc9df10
+
+
+
+
+ELF file SHA256: e251f84c8
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375af8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x1870
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xce8
+load:0x403cb700,len:0x2ed8
+entry 0x403c8918
+[0;32mI (31) boot: ESP-IDF v5.3.3 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul 22 2025 11:25:27[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v0.2[0m
+[0;32mI (38) boot: efuse block revision: v1.3[0m
+[0;32mI (43) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (48) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (52) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (57) boot: Enabling RNG early entropy source...[0m
+[0;32mI (62) boot: Partition Table:[0m
+[0;32mI (66) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (73) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (81) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (88) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (96) boot: End of partition table[0m
+[0;32mI (100) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0ed30h ( 60720) map[0m
+[0;32mI (119) esp_image: segment 1: paddr=0001ed58 vaddr=3fc94600 size=012c0h (  4800) load[0m
+[0;32mI (120) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=27bcch (162764) map[0m
+[0;32mI (154) esp_image: segment 3: paddr=00047bf4 vaddr=3fc958c0 size=03f98h ( 16280) load[0m
+[0;32mI (158) esp_image: segment 4: paddr=0004bb94 vaddr=40374000 size=105d4h ( 67028) load[0m
+[0;32mI (181) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (181) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (202) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (205) app_init: Project name:     hello_world[0m
+[0;32mI (211) app_init: App version:      7bee0ac-dirty[0m
+[0;32mI (216) app_init: Compile time:     Aug 21 2025 12:00:29[0m
+[0;32mI (222) app_init: ELF file SHA256:  e251f84c8...[0m
+[0;32mI (227) app_init: ESP-IDF:          v5.3.3[0m
+[0;32mI (232) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (237) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (242) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (247) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (254) heap_init: At 3FC9A1D0 len 0004F540 (317 KiB): RAM[0m
+[0;32mI (260) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (266) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (272) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (280) spi_flash: detected chip: generic[0m
+[0;32mI (283) spi_flash: flash io: dio[0m
+[0;33mW (287) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (300) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (311) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (318) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (325) main_task: Started on CPU0[0m
+[0;32mI (335) main_task: Calling app_main()[0m
+[0;32mI (335) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (335) cam_hal: cam init ok[0m
+[0;32mI (345) sccb: pin_sda 4 pin_scl 5[0m
+[0;32mI (345) sccb: sccb_i2c_port=1[0m
+[0;32mI (345) gpio: GPIO[38]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (385) camera: Camera PID=0x3660 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (385) camera: Detected OV3660 camera[0m
+[0;32mI (385) camera: Detected camera at address=0x3c[0m
+[0;32mI (705) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (705) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 6[0m
+[0;32mI (705) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 24, dma_buffer_size: 30720[0m
+[0;32mI (715) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 8, total_cnt: 10[0m
+[0;32mI (725) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;31mE (725) cam_hal: cam_dma_config(504): frame buffer malloc failed[0m
+[0;31mE (735) cam_hal: cam_config(594): cam_dma_config failed[0m
+[0;31mE (745) gdma: gdma_disconnect(314): no peripheral is connected to the channel[0m
+[0;31mE (755) camera: Camera config failed with error 0xffffffff[0m
+[0;31mE (755) example:take_picture: Camera Init Failed[0m
+[0;32mI (765) example:take_picture: Taking picture...[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x42009c29  PS      : 0x00060530  A0      : 0x82009bd0  A1      : 0x3fc9de70  
+A2      : 0x3fc9de90  A3      : 0x3c0340e4  A4      : 0x3c034164  A5      : 0x3fc9dec0  
+A6      : 0x3c035508  A7      : 0x00000000  A8      : 0x82009c29  A9      : 0x3fc9de50  
+A10     : 0x000002fd  A11     : 0x3c035508  A12     : 0x3c03554c  A13     : 0x000002fd  
+A14     : 0x3c035508  A15     : 0x00000010  SAR     : 0x00000004  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000004  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xfffffffa  
+
+
+Backtrace: 0x42009c26:0x3fc9de70 0x42009bcd:0x3fc9de90 0x42026c1f:0x3fc9dee0 0x4037c0ed:0x3fc9df10
+
+
+
+
+ELF file SHA256: e251f84c8
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375af8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x1870
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xce8
+load:0x403cb700,len:0x2ed8
+entry 0x403c8918
+[0;32mI (31) boot: ESP-IDF v5.3.3 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul 22 2025 11:25:27[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v0.2[0m
+[0;32mI (38) boot: efuse block revision: v1.3[0m
+[0;32mI (43) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (48) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (52) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (57) boot: Enabling RNG early entropy source...[0m
+[0;32mI (62) boot: Partition Table:[0m
+[0;32mI (66) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (73) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (81) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (88) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (96) boot: End of partition table[0m
+[0;32mI (100) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0ed30h ( 60720) map[0m
+[0;32mI (119) esp_image: segment 1: paddr=0001ed58 vaddr=3fc94600 size=012c0h (  4800) load[0m
+[0;32mI (120) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=27bcch (162764) map[0m
+[0;32mI (154) esp_image: segment 3: paddr=00047bf4 vaddr=3fc958c0 size=03f98h ( 16280) load[0m
+[0;32mI (158) esp_image: segment 4: paddr=0004bb94 vaddr=40374000 size=105d4h ( 67028) load[0m
+[0;32mI (181) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (181) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (202) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (205) app_init: Project name:     hello_world[0m
+[0;32mI (211) app_init: App version:      7bee0ac-dirty[0m
+[0;32mI (216) app_init: Compile time:     Aug 21 2025 12:00:29[0m
+[0;32mI (222) app_init: ELF file SHA256:  e251f84c8...[0m
+[0;32mI (227) app_init: ESP-IDF:          v5.3.3[0m
+[0;32mI (232) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (237) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (242) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (247) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (254) heap_init: At 3FC9A1D0 len 0004F540 (317 KiB): RAM[0m
+[0;32mI (260) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (266) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (272) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (280) spi_flash: detected chip: generic[0m
+[0;32mI (283) spi_flash: flash io: dio[0m
+[0;33mW (287) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (300) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (311) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (318) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (325) main_task: Started on CPU0[0m
+[0;32mI (335) main_task: Calling app_main()[0m
+[0;32mI (335) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (335) cam_hal: cam init ok[0m
+[0;32mI (345) sccb: pin_sda 4 pin_scl 5[0m
+[0;32mI (345) sccb: sccb_i2c_port=1[0m
+[0;32mI (345) gpio: GPIO[38]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (385) camera: Camera PID=0x3660 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (385) camera: Detected OV3660 camera[0m
+[0;32mI (385) camera: Detected camera at address=0x3c[0m
+[0;32mI (705) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (705) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 6[0m
+[0;32mI (705) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 24, dma_buffer_size: 30720[0m
+[0;32mI (715) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 8, total_cnt: 10[0m
+[0;32mI (725) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;31mE (725) cam_hal: cam_dma_config(504): frame buffer malloc failed[0m
+[0;31mE (735) cam_hal: cam_config(594): cam_dma_config failed[0m
+[0;31mE (745) gdma: gdma_disconnect(314): no peripheral is connected to the channel[0m
+[0;31mE (755) camera: Camera config failed with error 0xffffffff[0m
+[0;31mE (755) example:take_picture: Camera Init Failed[0m
+[0;32mI (765) example:take_picture: Taking picture...[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x42009c29  PS      : 0x00060530  A0      : 0x82009bd0  A1      : 0x3fc9de70  
+A2      : 0x3fc9de90  A3      : 0x3c0340e4  A4      : 0x3c034164  A5      : 0x3fc9dec0  
+A6      : 0x3c035508  A7      : 0x00000000  A8      : 0x82009c29  A9      : 0x3fc9de50  
+A10     : 0x000002fd  A11     : 0x3c035508  A12     : 0x3c03554c  A13     : 0x000002fd  
+A14     : 0x3c035508  A15     : 0x00000010  SAR     : 0x00000004  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000004  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xfffffffa  
+
+
+Backtrace: 0x42009c26:0x3fc9de70 0x42009bcd:0x3fc9de90 0x42026c1f:0x3fc9dee0 0x4037c0ed:0x3fc9df10
+
+
+
+
+ELF file SHA256: e251f84c8
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375af8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x1870
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xce8
+load:0x403cb700,len:0x2ed8
+entry 0x403c8918
+[0;32mI (31) boot: ESP-IDF v5.3.3 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul 22 2025 11:25:27[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v0.2[0m
+[0;32mI (38) boot: efuse block revision: v1.3[0m
+[0;32mI (43) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (48) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (52) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (57) boot: Enabling RNG early entropy source...[0m
+[0;32mI (62) boot: Partition Table:[0m
+[0;32mI (66) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (73) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (81) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (88) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (96) boot: End of partition table[0m
+[0;32mI (100) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0ed30h ( 60720) map[0m
+[0;32mI (119) esp_image: segment 1: paddr=0001ed58 vaddr=3fc94600 size=012c0h (  4800) load[0m
+[0;32mI (120) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=27bcch (162764) map[0m
+[0;32mI (154) esp_image: segment 3: paddr=00047bf4 vaddr=3fc958c0 size=03f98h ( 16280) load[0m
+[0;32mI (158) esp_image: segment 4: paddr=0004bb94 vaddr=40374000 size=105d4h ( 67028) load[0m
+[0;32mI (181) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (181) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (202) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (205) app_init: Project name:     hello_world[0m
+[0;32mI (211) app_init: App version:      7bee0ac-dirty[0m
+[0;32mI (216) app_init: Compile time:     Aug 21 2025 12:00:29[0m
+[0;32mI (222) app_init: ELF file SHA256:  e251f84c8...[0m
+[0;32mI (227) app_init: ESP-IDF:          v5.3.3[0m
+[0;32mI (232) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (237) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (242) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (247) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (254) heap_init: At 3FC9A1D0 len 0004F540 (317 KiB): RAM[0m
+[0;32mI (260) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (266) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (272) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (280) spi_flash: detected chip: generic[0m
+[0;32mI (283) spi_flash: flash io: dio[0m
+[0;33mW (287) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (300) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (311) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (318) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (325) main_task: Started on CPU0[0m
+[0;32mI (335) main_task: Calling app_main()[0m
+[0;32mI (335) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (335) cam_hal: cam init ok[0m
+[0;32mI (345) sccb: pin_sda 4 pin_scl 5[0m
+[0;32mI (345) sccb: sccb_i2c_port=1[0m
+[0;32mI (345) gpio: GPIO[38]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (385) camera: Camera PID=0x3660 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (385) camera: Detected OV3660 camera[0m
+[0;32mI (385) camera: Detected camera at address=0x3c[0m

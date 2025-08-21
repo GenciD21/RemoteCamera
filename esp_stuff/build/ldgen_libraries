@@ -66,6 +66,7 @@
 /home/genci21/Desktop/RemoteCamera/esp_stuff/build/esp-idf/esp_http_server/libesp_http_server.a
 /home/genci21/Desktop/RemoteCamera/esp_stuff/build/esp-idf/esp_https_ota/libesp_https_ota.a
 /home/genci21/Desktop/RemoteCamera/esp_stuff/build/esp-idf/esp_https_server/libesp_https_server.a
+/home/genci21/Desktop/RemoteCamera/esp_stuff/build/esp-idf/esp_psram/libesp_psram.a
 /home/genci21/Desktop/RemoteCamera/esp_stuff/build/esp-idf/esp_lcd/libesp_lcd.a
 /home/genci21/Desktop/RemoteCamera/esp_stuff/build/esp-idf/protobuf-c/libprotobuf-c.a
 /home/genci21/Desktop/RemoteCamera/esp_stuff/build/esp-idf/protocomm/libprotocomm.a
@@ -81,4 +82,6 @@
 /home/genci21/Desktop/RemoteCamera/esp_stuff/build/esp-idf/touch_element/libtouch_element.a
 /home/genci21/Desktop/RemoteCamera/esp_stuff/build/esp-idf/usb/libusb.a
 /home/genci21/Desktop/RemoteCamera/esp_stuff/build/esp-idf/wifi_provisioning/libwifi_provisioning.a
+/home/genci21/Desktop/RemoteCamera/esp_stuff/build/esp-idf/espressif__esp_jpeg/libespressif__esp_jpeg.a
+/home/genci21/Desktop/RemoteCamera/esp_stuff/build/esp-idf/espressif__esp32-camera/libespressif__esp32-camera.a
 /home/genci21/Desktop/RemoteCamera/esp_stuff/build/esp-idf/main/libmain.a

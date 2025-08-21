@@ -12,16 +12,6 @@
 # =============================================================================
 
 #############################################
-# Rule for compiling C files.
-
-rule C_COMPILER__my_app_unscanned_
-  depfile = $DEP_FILE
-  deps = gcc
-  command = ${LAUNCHER}${CODE_CHECK}/usr/bin/cc $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
-  description = Building C object $out
-
-
-#############################################
 # Rule for compiling CXX files.
 
 rule CXX_COMPILER__my_app_unscanned_
@@ -54,7 +44,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /snap/clion/359/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S/home/genci21/Desktop/RemoteCamera -B/home/genci21/Desktop/RemoteCamera
+  command = /snap/clion/363/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S/home/genci21/Desktop/RemoteCamera -B/home/genci21/Desktop/RemoteCamera
   description = Re-running CMake...
   generator = 1
 
@@ -63,7 +53,7 @@ rule RERUN_CMAKE
 # Rule for cleaning all built files.
 
 rule CLEAN
-  command = /snap/clion/359/bin/ninja/linux/x64/ninja $FILE_ARG -t clean $TARGETS
+  command = /snap/clion/363/bin/ninja/linux/x64/ninja $FILE_ARG -t clean $TARGETS
   description = Cleaning all built files...
 
 
@@ -71,6 +61,6 @@ rule CLEAN
 # Rule for printing all primary targets available.
 
 rule HELP
-  command = /snap/clion/359/bin/ninja/linux/x64/ninja -t targets
+  command = /snap/clion/363/bin/ninja/linux/x64/ninja -t targets
   description = All primary targets available:
 

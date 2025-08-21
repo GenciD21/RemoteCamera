@@ -1,6 +1,8 @@
 #include <opencv2/opencv.hpp>
 #include <iostream>
-#include <mysqlx/xdevapi.h>
+#include <check_images.h>
+#include <xdevapi.h>
+
 
 using namespace cv;
 using namespace std;
@@ -12,13 +14,14 @@ char get_shape_value();
 int initialize_database();
 
 
-int main() 
+int main()
 {
+
   unique_ptr<Table> table;
   unique_ptr<Schema> data;
   unique_ptr<Session> s2;
 
-  check_for_images("AAA");
+  check_for_images("AAAA");
 
   try
   {
@@ -92,19 +95,19 @@ char get_shape_value()
     cout << "\nChoose for an shape value: ";
     cin >> choice;
   } while (choice != 'R' && choice != 'T' && choice != 'C' && choice != 'S');
-  
+
   return choice;
 }
 
 int * get_hsv_values()
 {
-    int i; 
+    int i;
     int* hsv = new int[6];
     for(i = 0; i < 6; i ++)
     {
       do
-      { 
-        
+      {
+
       cout << "\nChoose for value " << i << ": ";
       cin >> hsv[i];
 

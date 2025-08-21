@@ -3,29 +3,26 @@ project(my_app)
 
 set(CMAKE_CXX_STANDARD 17)
 
-
-#set(OpenCV_DIR "/home/genci21/opencv/opencv-4.x/cmake")
-#set(mysql_concpp_DIR )
-#find_package(OpenCV REQUIRED)
-
-
 find_package(OpenCV REQUIRED)
 
-# set(EXTRA_FILES
-#     extra_includes/image_recieve.cpp
-# )
+set(MYSQLX_INCLUDE_DIR "/home/genci21/Downloads/mysql-connector-c++-9.4.0-linux-glibc2.28-x86-64bit/include/mysqlx")
+set(MYSQL_INCLUDE_DIR "/home/genci21/Downloads/mysql-connector-c++-9.4.0-linux-glibc2.28-x86-64bit/include/mysqlx")
+set(MYSQLX_LIBRARY "/home/genci21/Downloads/mysql-connector-c++-9.4.0-linux-glibc2.28-x86-64bit/lib64/libmysqlcppconnx.so")
+set(MYSQL_LIBRARY "/home/genci21/Downloads/mysql-connector-c++-9.4.0-linux-glibc2.28-x86-64bit/lib64/libmysqlcppconn.so")
+add_executable(my_app
+        main.cpp
+        ./extra_executables/check_images.cpp
+)
 
+target_include_directories(my_app PRIVATE
+        ${OpenCV_INCLUDE_DIRS}
+        ${MYSQLX_INCLUDE_DIR}
+        ${MYSQL_INCLUDE_DIR}
+        ./extra_headers
+)
 
-add_executable(my_app main.cpp
-        esp_stuff/main/extra_executables/wifi.c
-        esp_stuff/main/extra_includes/wifi.h
-        esp_stuff/main/extra_executables/http_requests.c
-        esp_stuff/main/extra_includes/http_requests.h)
-
-# target_include_directories(my_app PRIVATE "./extra_includes")
-
-target_link_libraries(my_app mysqlcppconn)
-target_link_libraries(my_app ${OpenCV_LIBS})
-target_include_directories(my_app PRIVATE ${OpenCV_INCLUDE_DIRS})
-#PRIVATE ${OpenCV_LIBS}
-
+target_link_libraries(my_app PRIVATE
+        ${MYSQLX_LIBRARY}
+        ${MYSQL_LIBRARY}
+        ${OpenCV_LIBS}
+)

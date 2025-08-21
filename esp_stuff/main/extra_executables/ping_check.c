@@ -12,7 +12,6 @@
 #include "esp_event.h"
 #include <string.h>
 #include "esp_crt_bundle.h"
-
 #include "lwip/inet.h"
 #include "lwip/netdb.h"
 #include "lwip/sockets.h"
