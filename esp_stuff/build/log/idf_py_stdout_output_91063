@@ -1,0 +1,22 @@
+[0/1] Re-running CMake...
+-- Building ESP-IDF components for target esp32s3
+NOTICE: Processing 3 dependencies:
+NOTICE: [1/3] espressif/esp32-camera (2.1.2)
+NOTICE: [2/3] espressif/esp_jpeg (1.3.1)
+NOTICE: [3/3] idf (5.3.3)
+-- Project sdkconfig file /home/genci21/Desktop/RemoteCamera/esp_stuff/sdkconfig
+-- Compiler supported targets: xtensa-esp-elf
+-- App "hello_world" version: 5002baf-dirty
+-- Adding linker script /home/genci21/Desktop/RemoteCamera/esp_stuff/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /home/genci21/Desktop/RemoteCamera/esp_stuff/build/esp-idf/esp_system/ld/sections.ld.in
+-- Adding linker script /home/genci21/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ld
+-- Adding linker script /home/genci21/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.api.ld
+-- Adding linker script /home/genci21/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.bt_funcs.ld
+-- Adding linker script /home/genci21/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.libgcc.ld
+-- Adding linker script /home/genci21/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.wdt.ld
+-- Adding linker script /home/genci21/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.version.ld
+-- Adding linker script /home/genci21/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.newlib.ld
+-- Adding linker script /home/genci21/esp/esp-idf/components/soc/esp32s3/ld/esp32s3.peripherals.ld
+-- Configuring incomplete, errors occurred!
+FAILED: build.ninja 
+/usr/bin/cmake --regenerate-during-build -S/home/genci21/Desktop/RemoteCamera/esp_stuff -B/home/genci21/Desktop/RemoteCamera/esp_stuff/build

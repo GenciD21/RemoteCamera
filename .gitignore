@@ -3,3 +3,4 @@
 ./esp_stuff/main/build
 ./esp_stuff/main/.devcontainer
 ./esp_stuff/main/.vscode
+./esp_stuff/main/esp_stuff/main/opencv

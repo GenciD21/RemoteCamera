@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "hello_world",
-    "project_version":    "7bee0ac-dirty",
+    "project_version":    "5002baf-dirty",
     "project_path":       "/home/genci21/Desktop/RemoteCamera/esp_stuff",
     "idf_path":           "/home/genci21/esp/esp-idf",
     "build_dir":          "/home/genci21/Desktop/RemoteCamera/esp_stuff/build",
@@ -1211,7 +1211,7 @@
             "managed_priv_reqs": [ "espressif__esp32-camera" ],
             "file": "/home/genci21/Desktop/RemoteCamera/esp_stuff/build/esp-idf/main/libmain.a",
             "sources": [ "/home/genci21/Desktop/RemoteCamera/esp_stuff/main/main.c", "/home/genci21/Desktop/RemoteCamera/esp_stuff/main/extra_executables/ping_check.c", "/home/genci21/Desktop/RemoteCamera/esp_stuff/main/extra_executables/wifi.c", "/home/genci21/Desktop/RemoteCamera/esp_stuff/main/extra_executables/http_requests.c", "/home/genci21/Desktop/RemoteCamera/esp_stuff/main/extra_executables/fotos.c" ],
-            "include_dirs": [ "./extra_includes" ]
+            "include_dirs": [ "./extra_includes", "./opencv" ]
         },
         "mbedtls": {
             "alias": "idf::mbedtls",
@@ -2836,7 +2836,7 @@
             "priv_reqs": [ "espressif__esp32-camera" ],
             "managed_reqs": [],
             "managed_priv_reqs": [ "espressif__esp32-camera" ],
-            "include_dirs": [ "./extra_includes" ]
+            "include_dirs": [ "./extra_includes", "./opencv" ]
         },
         "espressif__esp32-camera": {
             "alias": "idf::espressif__esp32-camera",
