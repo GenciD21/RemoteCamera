@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "hello_world",
-    "project_version":    "5002baf-dirty",
+    "project_version":    "15b3871-dirty",
     "project_path":       "/home/genci21/Desktop/RemoteCamera/esp_stuff",
     "idf_path":           "/home/genci21/esp/esp-idf",
     "build_dir":          "/home/genci21/Desktop/RemoteCamera/esp_stuff/build",

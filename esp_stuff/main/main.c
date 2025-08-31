@@ -10,9 +10,13 @@
 #include "nvs_flash.h"
 #include "esp_eap_client.h"
 #include "ping_check.h"
+#include "wifi.h"
+#include "http_requests.h"
 #include "fotos.h"
 #include <string.h>
 #include "sdkconfig.h"
+
+
 
 #define ESP_WIFI_IDENTITY      "gduraku@purdue.edu"
 #define ESP_WIFI_SSID      CONFIG_ESP_WIFI_SSID
@@ -112,7 +116,14 @@ void wifi_init_sta(void)
 
 void app_main(void)
 {
-
+    initialize_internet_connection();
     esp_camera_set_psram_mode(1);
-    take_picture();
+    camera_fb_t *picture = take_picture();
+    uint8_t * base_64_picture = printf_img_base64(picture);
+
+    initialize_configuration_http("http://48.217.67.239:5000/send_data/esp/Ulq24");
+    send_picture_data(base_64_picture);
+
+    
+
 }

@@ -1,0 +1,161 @@
+info: INFO: Symbol OV7670_SUPPORT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/managed_components/espressif__esp32-camera/Kconfig:3
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/main/Kconfig.projbuild:77
+info: INFO: Symbol OV7725_SUPPORT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/managed_components/espressif__esp32-camera/Kconfig:10
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/main/Kconfig.projbuild:84
+info: INFO: Symbol NT99141_SUPPORT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/main/Kconfig.projbuild:91
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/managed_components/espressif__esp32-camera/Kconfig:17
+info: INFO: Symbol OV2640_SUPPORT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/managed_components/espressif__esp32-camera/Kconfig:24
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/main/Kconfig.projbuild:98
+info: INFO: Symbol OV3660_SUPPORT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/managed_components/espressif__esp32-camera/Kconfig:31
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/main/Kconfig.projbuild:105
+info: INFO: Symbol OV5640_SUPPORT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/main/Kconfig.projbuild:112
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/managed_components/espressif__esp32-camera/Kconfig:38
+info: INFO: Symbol GC2145_SUPPORT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/main/Kconfig.projbuild:119
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/managed_components/espressif__esp32-camera/Kconfig:45
+info: INFO: Symbol GC032A_SUPPORT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/managed_components/espressif__esp32-camera/Kconfig:52
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/main/Kconfig.projbuild:126
+info: INFO: Symbol GC0308_SUPPORT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/managed_components/espressif__esp32-camera/Kconfig:59
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/main/Kconfig.projbuild:133
+info: INFO: Symbol BF3005_SUPPORT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/main/Kconfig.projbuild:140
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/managed_components/espressif__esp32-camera/Kconfig:66
+info: INFO: Symbol BF20A6_SUPPORT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/main/Kconfig.projbuild:147
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/managed_components/espressif__esp32-camera/Kconfig:73
+info: INFO: Symbol SC101IOT_SUPPORT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/main/Kconfig.projbuild:154
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/managed_components/espressif__esp32-camera/Kconfig:80
+info: INFO: Symbol SC101IOT_720P_15FPS_ENABLED defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/managed_components/espressif__esp32-camera/Kconfig:95
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/main/Kconfig.projbuild:169
+info: INFO: Symbol SC101IOT_VGA_25FPS_ENABLED defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/main/Kconfig.projbuild:173
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/managed_components/espressif__esp32-camera/Kconfig:99
+info: INFO: Symbol SC030IOT_SUPPORT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/managed_components/espressif__esp32-camera/Kconfig:105
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/main/Kconfig.projbuild:179
+info: INFO: Symbol SC031GS_SUPPORT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/managed_components/espressif__esp32-camera/Kconfig:112
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/main/Kconfig.projbuild:186
+info: INFO: Symbol HM1055_SUPPORT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/main/Kconfig.projbuild:194
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/managed_components/espressif__esp32-camera/Kconfig:120
+info: INFO: Symbol HM0360_SUPPORT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/main/Kconfig.projbuild:201
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/managed_components/espressif__esp32-camera/Kconfig:127
+info: INFO: Symbol MEGA_CCM_SUPPORT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/main/Kconfig.projbuild:208
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/managed_components/espressif__esp32-camera/Kconfig:134
+info: INFO: Symbol SCCB_HARDWARE_I2C_DRIVER_LEGACY defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/main/Kconfig.projbuild:222
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/managed_components/espressif__esp32-camera/Kconfig:148
+info: INFO: Symbol SCCB_HARDWARE_I2C_DRIVER_NEW defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/main/Kconfig.projbuild:224
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/managed_components/espressif__esp32-camera/Kconfig:150
+info: INFO: Symbol SCCB_HARDWARE_I2C_PORT0 defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/managed_components/espressif__esp32-camera/Kconfig:159
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/main/Kconfig.projbuild:233
+info: INFO: Symbol SCCB_HARDWARE_I2C_PORT1 defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/managed_components/espressif__esp32-camera/Kconfig:161
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/main/Kconfig.projbuild:235
+info: INFO: Symbol SCCB_CLK_FREQ defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/main/Kconfig.projbuild:240
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/managed_components/espressif__esp32-camera/Kconfig:166
+info: INFO: Symbol GC_SENSOR_WINDOWING_MODE defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/main/Kconfig.projbuild:256
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/managed_components/espressif__esp32-camera/Kconfig:182
+info: INFO: Symbol GC_SENSOR_SUBSAMPLE_MODE defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/main/Kconfig.projbuild:258
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/managed_components/espressif__esp32-camera/Kconfig:184
+info: INFO: Symbol CAMERA_TASK_STACK_SIZE defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/main/Kconfig.projbuild:262
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/managed_components/espressif__esp32-camera/Kconfig:188
+info: INFO: Symbol CAMERA_CORE0 defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/managed_components/espressif__esp32-camera/Kconfig:200
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/main/Kconfig.projbuild:274
+info: INFO: Symbol CAMERA_CORE1 defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/main/Kconfig.projbuild:276
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/managed_components/espressif__esp32-camera/Kconfig:202
+info: INFO: Symbol CAMERA_NO_AFFINITY defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/main/Kconfig.projbuild:278
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/managed_components/espressif__esp32-camera/Kconfig:204
+info: INFO: Symbol CAMERA_DMA_BUFFER_SIZE_MAX defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/main/Kconfig.projbuild:283
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/managed_components/espressif__esp32-camera/Kconfig:209
+info: INFO: Symbol CAMERA_PSRAM_DMA defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/managed_components/espressif__esp32-camera/Kconfig:217
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/main/Kconfig.projbuild:291
+info: INFO: Symbol CAMERA_JPEG_MODE_FRAME_SIZE_AUTO defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/main/Kconfig.projbuild:305
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/managed_components/espressif__esp32-camera/Kconfig:231
+info: INFO: Symbol CAMERA_JPEG_MODE_FRAME_SIZE_CUSTOM defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/main/Kconfig.projbuild:311
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/managed_components/espressif__esp32-camera/Kconfig:237
+info: INFO: Symbol CAMERA_JPEG_MODE_FRAME_SIZE defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/managed_components/espressif__esp32-camera/Kconfig:244
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/main/Kconfig.projbuild:318
+info: INFO: Symbol CAMERA_CONVERTER_ENABLED defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/main/Kconfig.projbuild:326
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/managed_components/espressif__esp32-camera/Kconfig:252
+info: INFO: Symbol LCD_CAM_CONV_BT601_ENABLED defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/managed_components/espressif__esp32-camera/Kconfig:266
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/main/Kconfig.projbuild:340
+info: INFO: Symbol LCD_CAM_CONV_BT709_ENABLED defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/managed_components/espressif__esp32-camera/Kconfig:268
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/main/Kconfig.projbuild:342
+info: INFO: Symbol LCD_CAM_CONV_FULL_RANGE_ENABLED defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/main/Kconfig.projbuild:346
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/managed_components/espressif__esp32-camera/Kconfig:272
+info: INFO: Symbol LCD_CAM_ISR_IRAM_SAFE defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/managed_components/espressif__esp32-camera/Kconfig:284
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/main/Kconfig.projbuild:358
+info: INFO: Choice SC101_REGS_SELECT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/managed_components/espressif__esp32-camera/Kconfig:87
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/main/Kconfig.projbuild:161
+info: INFO: Choice SCCB_HARDWARE_I2C_DRIVER_SELECTION defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/main/Kconfig.projbuild:215
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/managed_components/espressif__esp32-camera/Kconfig:141
+info: INFO: Choice SCCB_HARDWARE_I2C_PORT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/managed_components/espressif__esp32-camera/Kconfig:155
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/main/Kconfig.projbuild:229
+info: INFO: Choice GC_SENSOR_WINDOW_MODE defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/main/Kconfig.projbuild:248
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/managed_components/espressif__esp32-camera/Kconfig:174
+info: INFO: Choice CAMERA_TASK_PINNED_TO_CORE defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/main/Kconfig.projbuild:268
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/managed_components/espressif__esp32-camera/Kconfig:194
+info: INFO: Choice CAMERA_JPEG_MODE_FRAME_SIZE_OPTION defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/main/Kconfig.projbuild:299
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/managed_components/espressif__esp32-camera/Kconfig:225
+info: INFO: Choice CAMERA_CONV_PROTOCOL defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/managed_components/espressif__esp32-camera/Kconfig:259
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/main/Kconfig.projbuild:333
+CMake Error at /home/genci21/esp/esp-idf/tools/cmake/component.cmake:483 (add_library):
+  Cannot find source file:
+
+    /home/genci21/Desktop/RemoteCamera/esp_stuff/main/main.c
+
+  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm
+  .ccm .cxxm .c++m .h .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90
+  .f95 .f03 .hip .ispc
+Call Stack (most recent call first):
+  main/CMakeLists.txt:1 (idf_component_register)
+
+
+CMake Error at /home/genci21/esp/esp-idf/tools/cmake/component.cmake:483 (add_library):
+  No SOURCES given to target: __idf_main
+Call Stack (most recent call first):
+  main/CMakeLists.txt:1 (idf_component_register)
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.
+ninja: error: rebuilding 'build.ninja': subcommand failed

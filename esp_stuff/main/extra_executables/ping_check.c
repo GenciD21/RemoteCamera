@@ -25,6 +25,7 @@
 
 
 
+
 static void test_on_ping_success(esp_ping_handle_t hdl, void *args)
 {
     // optionally, get callback arguments

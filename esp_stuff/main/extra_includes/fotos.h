@@ -16,6 +16,7 @@
 
 
     esp_err_t init_camera(uint32_t xclk_freq_hz, pixformat_t pixel_format, framesize_t frame_size, uint8_t fb_count, int sccb_sda_gpio_num, int sccb_port);
-    camera_fb_t take_picture();
+    camera_fb_t* take_picture();
+    uint8_t* printf_img_base64(camera_fb_t *pic);
 
 #endif

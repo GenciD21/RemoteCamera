@@ -17,7 +17,7 @@
 
 #define ESP_WIFI_SSID     "PAL3.0"
 #define ESP_WIFI_USERNAME   "gduraku@purdue.edu"
-#define ESP_WIFI_PASSWORD     "Ulqini24"
+#define ESP_WIFI_PASSWORD     " "
 #define ESP_MAXIMUM_RETRY  CONFIG_ESP_MAXIMUM_RETRY
 
 #if CONFIG_ESP_WPA3_SAE_PWE_HUNT_AND_PECK

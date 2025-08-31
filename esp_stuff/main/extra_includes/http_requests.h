@@ -34,8 +34,8 @@
 
 
 cJSON* fetch_json_from_server(esp_http_client_method_t request_type);
-void initialize_configuration_http(char *URL, esp_http_client_method_t request_type);
-
+void initialize_configuration_http(char *URL);
+void send_picture_data();
 
 
 #endif //HTTP_REQUESTS_H

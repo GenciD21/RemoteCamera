@@ -3,7 +3,7 @@
 #include <nvs_flash.h>
 #include <sys/param.h>
 #include <string.h>
-
+#include <mbedtls/base64.h>
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 
@@ -71,6 +71,52 @@ static camera_config_t camera_config = {
 };
 
 
+uint8_t* printf_img_base64(camera_fb_t *pic)
+{
+    uint8_t *outbuffer = NULL;
+    size_t outsize = 0;
+    if (PIXFORMAT_JPEG != pic->format) {
+        fmt2jpg(pic->buf, pic->width * pic->height * 2, pic->width, pic->height, pic->format, 50, &outbuffer, &outsize);
+    } else {
+        outbuffer = pic->buf;
+        outsize = pic->len;
+    }
+
+    uint8_t *base64_buf = calloc(1, outsize * 4);
+    if (NULL != base64_buf) {
+        size_t out_len = 0;
+        mbedtls_base64_encode(base64_buf, outsize * 4, &out_len, outbuffer, outsize);
+
+        for (size_t i = 0; i < strlen((char *)base64_buf); i++)
+         {
+        if (base64_buf[i] == '+') 
+        {
+            base64_buf[i] = '-';
+        }
+        else if (base64_buf[i] == '/') 
+        {
+            base64_buf[i] = '_';
+        }
+        }
+
+        size_t len = strlen((char *)base64_buf);
+        while (len > 0 && base64_buf[len - 1] == '=') 
+        {
+            base64_buf[len - 1] = '\0';
+            len--;
+        }
+    
+        printf("%s\n", base64_buf);
+        return base64_buf;
+        free(base64_buf);
+        if (PIXFORMAT_JPEG != pic->format) {
+            free(outbuffer);
+        }
+    } else {
+        ESP_LOGE(TAGF, "malloc for base64 buffer failed");
+    }
+    return NULL;
+}
 
 esp_err_t camera_initailize(void)
 {
@@ -132,7 +178,7 @@ esp_err_t camera_initailize(void)
 // }
 
 
- camera_fb_t take_picture()
+ camera_fb_t* take_picture()
 {
     camera_initailize();
     ESP_LOGI(TAGF, "Taking picture...");
@@ -142,5 +188,5 @@ esp_err_t camera_initailize(void)
     ESP_LOGI(TAGF, "Picture taken! Its size was: %zu bytes", pic->len);
     esp_camera_fb_return(pic);
 
-    return *pic;
+    return pic;
 }

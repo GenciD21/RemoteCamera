@@ -1,0 +1,150 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x28 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40048e22
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x19fc
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xe8c
+load:0x403cb700,len:0x3164
+entry 0x403c8940
+[0;32mI (26) boot: ESP-IDF v5.3.3 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Aug 31 2025 12:55:47[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) boot: efuse block revision: v1.3[0m
+[0;32mI (38) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (43) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (48) boot.esp32s3: SPI Mode       : QOUT[0m
+[0;32mI (53) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (58) boot: Enabling RNG early entropy source...[0m
+[0;32mI (63) boot: Partition Table:[0m
+[0;32mI (67) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (74) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (82) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (89) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (97) boot: End of partition table[0m
+[0;32mI (101) esp_image: segment 0: paddr=00010020 vaddr=3c0c0020 size=367ech (223212) map[0m
+[0;32mI (146) esp_image: segment 1: paddr=00046814 vaddr=3fc9d000 size=0782ch ( 30764) load[0m
+[0;32mI (152) esp_image: segment 2: paddr=0004e048 vaddr=40374000 size=01fd0h (  8144) load[0m
+[0;32mI (154) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=b5b30h (744240) map[0m
+[0;32mI (282) esp_image: segment 4: paddr=00105b58 vaddr=40375fd0 size=16f94h ( 94100) load[0m
+[0;32mI (312) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (313) boot: Disabling RNG early entropy source...[0m
+[0;32mI (325) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (325) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (325) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (330) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (335) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (340) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (345) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (351) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (357) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (363) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (369) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (375) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (379) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (384) esp_psram: Speed: 80MHz[0m
+[0;32mI (409) mmu_psram: Read only data copied and mapped to SPIRAM[0m
+[0;32mI (476) mmu_psram: Instructions copied and mapped to SPIRAM[0m
+[0;32mI (476) cpu_start: Multicore app[0m
+[0;32mI (872) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (880) cpu_start: Pro cpu start user code[0m
+[0;32mI (880) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (881) app_init: Application information:[0m
+[0;32mI (883) app_init: Project name:     hello_world[0m
+[0;32mI (889) app_init: App version:      15b3871-dirty[0m
+[0;32mI (894) app_init: Compile time:     Aug 31 2025 12:55:44[0m
+[0;32mI (900) app_init: ELF file SHA256:  a6e344606...[0m
+[0;32mI (905) app_init: ESP-IDF:          v5.3.3[0m
+[0;32mI (910) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (915) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (920) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (925) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (932) heap_init: At 3FCAB3C8 len 0003E348 (248 KiB): RAM[0m
+[0;32mI (938) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (944) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (950) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (957) esp_psram: Adding pool of 7168K of PSRAM memory to heap allocator[0m
+[0;32mI (964) spi_flash: detected chip: generic[0m
+[0;32mI (969) spi_flash: flash io: qout[0m
+[0;33mW (973) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (983) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (990) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (998) main_task: Started on CPU0[0m
+[0;32mI (1008) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1008) main_task: Calling app_main()[0m
+[0;32mI (1028) wifi station: ESP_WIFI_MODE_STA[0m
+[0;32mI (1028) wifi station: Initiating Wifi Protcol[0m
+[0;32mI (1028) pp: pp rom version: e7ae62f[0m
+[0;32mI (1028) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1048) wifi:wifi driver task: 3fcbd15c, prio:23, stack:6656, core=0[0m
+[0;32mI (1048) wifi:wifi firmware version: b0b320f[0m
+[0;32mI (1048) wifi:wifi certification version: v7.0[0m
+[0;32mI (1048) wifi:config NVS flash: enabled[0m
+[0;32mI (1048) wifi:config nano formating: disabled[0m
+[0;32mI (1058) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1058) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1068) wifi:Init management short buffer num: 32[0m
+[0;32mI (1068) wifi:Init static tx buffer num: 16[0m
+[0;32mI (1078) wifi:Init tx cache buffer num: 32[0m
+[0;32mI (1078) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1078) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1088) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1088) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1098) wifi_init: rx ba win: 6[0m
+[0;32mI (1098) wifi_init: accept mbox: 6[0m
+[0;32mI (1098) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1108) wifi_init: udp mbox: 6[0m
+[0;32mI (1108) wifi_init: tcp mbox: 6[0m
+[0;32mI (1118) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1118) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1118) wifi_init: tcp mss: 1440[0m
+[0;32mI (1128) wifi_init: WiFi/LWIP prefer SPIRAM[0m
+[0;32mI (1128) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1138) wifi_init: WiFi RX IRAM OP enabled[0m
+WIFI SSID: PAL3.0, WIFI Username: gduraku@purdue.edu, Wifi Password: Ulqini24W (1138) wifi:Password length is zero, but authmode threshold is 5, making it impossible to connect to an AP with authmode OPEN
+[0;32mI (1158) wifi station: WIFI Started[0m
+[0;32mI (1158) phy_init: phy_version 700,8582a7fd,Feb 10 2025,20:13:11[0m
+[0;32mI (1198) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (1208) wifi:mode : sta (30:ed:a0:a0:e6:98)[0m
+[0;32mI (1208) wifi:enable tsf[0m
+[0;32mI (1208) wifi station: WIFI Connecting[0m
+[0;32mI (1218) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1218) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1228) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1238) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1718) wifi:connected with PAL3.0, aid = 33, channel 6, BW20, bssid = 34:5d:a8:62:80:22[0m
+[0;32mI (1718) wifi:security: WPA2-ENT, phy: bgn, rssi: -66[0m
+[0;32mI (1718) wifi:pm start, type: 1[0m
+
+[0;32mI (1718) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1728) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (1748) wifi:<ba-add>idx:0 (ifx:0, 34:5d:a8:62:80:22), tid:0, ssn:2, winSize:64[0m
+[0;32mI (1788) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (2738) esp_netif_handlers: sta ip: 10.184.29.101, mask: 255.255.128.0, gw: 10.184.0.1[0m
+[0;32mI (2738) wifi station: got ip:10.184.29.101[0m
+[0;32mI (2738) s3 ll_cam: DMA Channel=1[0m
+[0;32mI (2738) cam_hal: cam init ok[0m
+[0;32mI (2748) sccb: pin_sda 4 pin_scl 5[0m
+[0;32mI (2748) sccb: sccb_i2c_port=1[0m
+[0;32mI (2748) gpio: GPIO[38]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2788) camera: Camera PID=0x3660 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (2788) camera: Detected OV3660 camera[0m
+[0;32mI (2788) camera: Detected camera at address=0x3c[0m
+[0;32mI (3108) cam_hal: PSRAM DMA mode enabled[0m
+[0;32mI (3108) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 6[0m
+[0;32mI (3108) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 24, dma_buffer_size: 153600[0m
+[0;32mI (3118) cam_hal: buffer_size: 153600, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 40, total_cnt: 11[0m
+[0;32mI (3128) cam_hal: Allocating 168976 Byte frame buffer in PSRAM[0m
+[0;32mI (3138) cam_hal: Frame[0]: Offset: 16, Addr: 0x3C110610[0m
+[0;32mI (3138) cam_hal: cam config ok[0m
+[0;32mI (3158) ov3660: Calculated VCO: 160000000 Hz, PLLCLK: 80000000 Hz, SYSCLK: 20000000 Hz, PCLK: 10000000 Hz[0m
+[0;32mI (3178) example:take_picture: Taking picture...[0m
+[0;32mI (3478) example:take_picture: Picture taken! Its size was: 153600 bytes[0m
+[0;32mI (3748) wifi:<ba-add>idx:1 (ifx:0, 34:5d:a8:62:80:22), tid:3, ssn:0, winSize:64[0m
+_9j_4AAQSkZJRgABAQAAAQABAAD_2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P_2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P_wAARCADwAUADASIAAhEBAxEB_8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL_8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4-Tl5ufo6erx8vP09fb3-Pn6_8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL_8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3-Pn6_9oADAMBAAIRAxEAPwC1Ve8tEuo8Hhh0NWKSsDmOYuLaSByjrj0PrUBWurmhjmQrIoIrIutKZMtEdw9D1ouWpGUabjAyakYBevFRkFzx0plDQu45pJD2FS42r701V5yaAERNopSKk2gim4PSgBhGRTTxU2KjdSKQCU004U09aAAdKKXtSfWgBAKQnFKWph5PNACFqbmgnNNzTsIdmkzSDJqRIXftgUDsR0oGaspaj-I1YSFFHCipcilFlVIGYZ6CmvEyHkcVoYoKhu1LmHyozcUoxmrxt1btUT2uBkUcwuVkAWnoKTBU4NKKZI7HNOpo5OaCcnApjHDmg8dKUcCjjqelACDABJqCSQnp0olkzwKI4i_0oENRC7VMVwNide5qUKEXA4ppOB0wKAIzhF2rSovc0KN7VJtzx6UgOwpKKKDIKZJ92n01_umk9howUtBdXCW-Qrs-wMfXpUk2hajbEg2rsPVBuH6U6E-XqSH-7MD-tehcYrenFSiTUm4vQ8zGmXh_5dpv--DUp0fUNuRZzY_3a9H49KcqljwKv2aIVWT2PLpbWa3IE0Txk_3lIqLFery2sEkZW4RJFPVWGRXL6p4TildpLCTys_8ALNuR-BqHDsa8_L8RxxzjFRuxAx39a07_AEa9sED3EfyE4DKcis9hxyKhq25akmrohXPelA5pGyDUgAIpDGHikPSlI5prGkAmMmo2bsOlPPTAqPaWOBQhDepqVIC3Xipo4QgyeTUtJstR7jEiVe3NSAUCnUi0KBTs00UtSMWnAU0U9elACinEZFApcUgKk0R6ioOhrSxmq1zDtIYdDVJkyXUgHGaI1ycmgjPFPC8YqyBKhmkJO0U-WTA2ikjiCjc_5UgGRRZ-ZuBVgdOB9KMFhnHHpSEt024oADx941GTuNOKMeoqREVeTQAIm1c09Qu4LnJNRuxY-1S2y5cse3ShgdTSUmaM0GVhaRvumjNITxSAx7j5bxiPUGvQk-cDHOa8-veLk_QGvQrOdPsMDJzujU_pW1F6E1Ip2bdiZYgOXNDSgDCComdm6mm1vy33MnUS0gOJJPJpKSjNOxlcSSNJUKSKGU9QRkGue1TwvFMTJZERtj7h-6fp6V0VFJxvuNSad0eZXmnXFq5WaF0I7kcH8aq4I4NequiyKVdQynqCM1h6j4Ytbpt8B8hu4Ayv5dqylT7G8a_8xwbdaaeK29R8N3tnucJ50Y_iTn9KxmHbHSs3Frc2jJS2I8Zqe3i43EVHjmrwTbCv0rNs0iiFuKbSscmkFIsUU4UwU7NAC5pabmjNADwaevWo1OalSkxjxTwM00CnCpYBimXIH2c_UVMBUV3xEB2zQtwexSUZY0kjADAp6jC-5qSO2dvmxzWpkVQoT5mHzdhU0cDupkk-6OlXIbEA7peT6VJd4WDAAHNTzdEBQPSkooqgCmk8UtNNADSwB5q9Au2MDHPWqMS-ZMB261pqKmTA2d3vSb_eoN_vSb_etLGZPvpC9VzIPWmmZR1YUWAq37YlU-1dtoz79JtT_wBMwK4G_kBZcc9a2LDxE9nYxW6Qq2wY3E9ec1dJqK1IqxckrHZ5ozXHyeKLsg7UiT3wf8aqyeIr5utyB9FH-Fa-1iYexmdzmkLAdTXn0mtXT_eu5foGIqq98zfed2-ppe18ilQfc9Ge8t4_vzxL9XAqu-sWCdbpD9Of5V56bv2P50w3TdgKn2j7FKh3Z3sviKwT7ru_-6v-NV38U2w-5DKfrgVxBuHPemGZj_EaTqSKVCJ2Mnis4-S1A_3nz_SsDUriK-n87yo4XPXZwD7mssyE9z-dNLVLk3oy404xd0TsnUqQfpVwMJLMMvbg1mBmzkA1Yg3bicMuRyOxrOSuapgaKU03k9KRoBNJknpTgtO20AMCk0u3mpAtOA9qQWIwCKerEdaeFz2p2z2pXAcjZqQVDtx0p6E1LGiYVFdDKqPepR0p5tpJwNgGB60k9RS2M_BBq3A2QKnGmufvOoqaGwWI5MmfwqnJGZFzUF1E8iqFHetMQIOpJpfLjH8IrPmaHoYgsZD1IFSLp5PVj-ArY-UdAKQuKfOw0MxdNHox_GnHT0UfdH4mr7Sgd6ryy8daOZhcprAI24A_CpNtKDmlpiKbX_uaja-J9ao5J6A0oRz0U1uKyLJvG_yaYblz3qMQSn-GnC1kPXAoAa0rN1NJ5hHc1MLM92p4sx3JNFwKu-jdVwWsY7ZpwhQdFFO4FHJPTNKEc9FNaGwDoKMUuYCiIZD_AA4pRbOepAq7ilxRdgVBa-rU4WqdyTVoKT0FPW3lPSNvypNgVBbxj-GnCJB0UVdWxnP8GPqaeunSHqyip50BR2gdqXHB-laI04fxSfkKZc28MERwSWPrSU03YDL2E8mhgBxUoyTk1ETkk1RaEFOB_KkpwFIsAaeOabilHFICVaf2qMGnbuKljHYyKbjBpQ1L1oAfGcir1q22M_Ws8EqatI4CDFS0RLYtmSkMlVTJSGSlYgsmSmmWqxkppk96dgLJkphlquXzTSxNPlAleWoHkycUjZNM24NNIZMhqUVWU4qdTkUMRAIVHal8sCrgtJT2x9akWxbuwFPnQihsHpS7K0RZIOrk_Sni1hHYn6mlzoDL20BCegNa4iiXoi07IHAwKXtAMlbaRuiN-VSCxmPVQPqa0t9IXpc7AorpzfxOB9KkXT4x95ifpVjzKQyUuaQDBZwD-En6mniGFeka_lTTJTTJRdgTDavRQKXdVcyUnmUrATl6TfVfzORk4zWdqWqmI-VbHDfxP3q4wbE30Ngvisq6kMspPYdKoWl7PJKFLsc9cnNWnPFWocrKQgxg1ER6VIBxSYptmiGcfjSgimOGB4NM3EdRRYZPuFG4VEsgp6uCetFh2JVOaeBmow6AdaPN5-UE0rATBaVQQcUkeW5IqYAAe9QwGYxS5IFLjFLjigTV0NyaTmlopmQmKMUtJmgAxRTljd-FVj9BU6WFy_SMj68UXSAq0hGa0k0iU_fkVfpzVmPSIR99mY_lU86Q7mHtqe1jeWVUAPJ61vR2NsnSJT9eanRFBwoAA9BUuougrmaZB603zBVUyGk3miwFoy-9NMvvVbf70m6nYCyZfemmWq-6k307AT-bSeZUBegvRYCYvSbzUBc0henYCcv70m_3qAvSbie1FgJjJTHnVASx_CoyTWZc3BdiAeKuMU2JktxfMQzA8ngewrNYliSeppxJc04pxW2wkWdOTG9z9BVwnmorVNkC-_JqQknp0rNu7NEgoPAo7UnWpLsJjNNKjNS7eOKa4oTAYq57U8Rj0oSpkHNDYxiw56CpBGBgYqRTzijHNS2AKMdKBktTuAKRBzn1pAKaVaXFCjmkBUnu44mZedwqO2vY5J1SUlVJ5YDpVTVBi6J9Rmqi8MDW6imjF6M7qDTLV0Vw7SKRkHPBq0llbx_dhX8RmuW0zWJbLCn54ieVP9K623uI7qESxNuU1yzjKO4hdoA4AFGKcaSswEpaKBQAU5RgU3qcU8UgOW30m-ocmjBNddhku80m_wB6ZtpdtFgF30m72pdopcUANyTRgnvT8UYoAZt96UKKdRQK4m2lxRRQBBeSeVbse54FYpPGa0dTcnYg-tZzdhWkVoJj4hnJp-3JA9TimocCpYTumUenNNlIuZwoApRxQRxTScVBokL34pTxTQfWgnNIoUsRUZYn6U5jxTZFZl-ShCHxnmrKHAqvEhVQCcn1onE3HljPrSY0Wg4HQUbiajjRvLy3Wl7VIxfvGpRx0qIU8GgB5OKM9aF9TSYxn3pAZeqL--U-1VAnNaOoLnYap1tHYxktQK8cVq6DePBepGWPlyHaR79qzBytSW77JY3H8LA05K6sI709KbQGyBjpRmuAQUtNzSE9qYDh607NMzQWpDOWxS4paWusQ3FLilpQOaAEoqRYpH-6hP4VMlhO3Vdo9zSugKtFaC6YerP-QqZNPhXrlvrU86AyacsUjfdRj-FbSwRJ91FH4U_gUvaBYyFsp2_hA-pqVdOP8Ug_AVo0lLnYHJasgS-eNSSFAH6ZrPYcVsa1Ay3rOej8isiQcfjXTB6IGNB4qe0OZqgPAp9oSJM9qb2BbmmxwKj60hyT1o6daixrcWm5o4NIRRYLik5pycHFRnIpynkGgC0g5qcKAM1BEc1MzcVmyxGJY47U0ijOKYzjpQIUmlU1GDmnrj1phcmU5pxHSmoakOCKljM_UeI1-tUKu6mcBR-NU62hsZS3Hp0pRTYx1pw6kVRB2NlLvtIWJ5KD-VT7qzNLkzYRc9Bj9at-ZXG1qMsbqTdk5qAycUnmYFKwFjfTTJVdpRUTTe9FgIE0-djyoX6mpk0s_wAcg_AVp0U3NiKaadCvUFvqamW3iT7saj8KlpKm7YBgYopKKBhRSZpCaAA0lGaSmAtNJoJppoAr31utxAVI-Ycg1yEq4l2-ldsTxXGX277ZJs4wxrek-givIccVMmERR-JqHYSw3cmpWOXNbgXV-7TWIzQhygpkgyfeoNBd4o3ZqGWXgAcetNjbDgZyDTFcmzmnIaZn5uOlOQ4cihjRbhODUrnFQxGlnfArN7mjYM_FM3c01mwKbnjPaqSM2yYGnj3qp5hyPSpixQA5yDQ0CZOMeuKkBZRnORUCNmpXbamfaoaKKGpOGcY9Kqg8Us75YMe9RjkVslZGTd2TRt1FSgc1DCMuRV6GEs9DYjS01ttqAfWrfm-9VCjWqKG_iGRUbT8VztXdxl0zDPWmNOPWqJlJFMLnuafIBbe596hacmoC1NLU1FAdbRRSZrmEFIaCaTNMYZozTc0UwFJpKTNITQApNNJpM0maYC5pM0hNNJoAGPBrkbv5bmX03musY_Ka5K8Gbib_AHyf1rWmBEp5H1pW4Y1GXwcdqk3qw54PrW4E0bYGalyGquhGMZBpxBHSpKuPaMHrUflgHpS7nHvRuY9RQAoGKBwwNJk-lNeQgjFMLlxCcU1ss45qBJzjpT0ly_NTYpyQ5gRTCSVxT2kXvTNyk_eppiYBM4ycVPHGOOS2KarIO-aeJQOgpt3EkkTIoXk02dv3TYpoYsaZcP8AIFqVuNlGdfkHsaai84qdl3Lj3pjDDfKe1W2RYltk_f49q2Gj-yhGYfM67lHtWRpStNfohPLHFaeoXP2i7dgfkX5U_wB0cCs5XvYCOSVpGLO2SajLUwmjNFgHlqYzgU0tTSadgEeUjp-NMWRlb5zkHvSsMnimEcYPSmM7cmkzSE00muSxIuaM03NJmgBc0E03NN3Uxjs0mabmkzTAduppNNLUhagBxNNLU0tTS1MBxPFctqAKXMnua6UtXO6qyvMSv0NaU9wM5-tLk7c5oUZYcZp8oA6CugQxW5qzFIpGD1qttwM9KUE5pNDTLwx6n86cFGepqmsjg89KnSUGod0WrEwjWn-WuOlQmQetKJaQ9CUInpQYUPTg1H5nvTfPAoDQkKkehqNto6jFIZs-lICT1piHKUP3TUqlR1qqPlkOOlP8w9KBFlpQBwageQE5LVEzFjSHgg0IGx_nKTwKUdBUAXaxJqaM5GabEXdLjCSyzdBGhP49B_Omk80sT-XbSrj7-Bn6VFmp6gPzSFsUzNNZwvU0xD80maiMvoKVX3CmFyTNFNzRmiwHY7qbmmk0ma5LCHFqaWppamlqYDyabuphamlqBkhamlqYXppanYCQtTS1Rlveml6dgJC1NLe9Rl6YXp2AdK5EbEdga5yQ7ic85rdkbcpHqKxSmC2eoNaQ0AgiXBJPanEgjJoByD60pHygVpcBnXk9KTPOKG44NKvUUwHEnaKYCc08420wntSQDtxIpd5HFNA4oAosguOJJ-lG4LxSZNNxzRYdx-7JpwY0xRin5pMBc0Zz0pDz2pyjFIBQMUjYxTuaQgbaAImPzetWI16VGvXOKmTk5_KmwRKzcAdhTM0spwaiLUkA5nwKqs3z092zxSw2k0x-VDj1NUiRoNPXOeM1oW-kkYMrfgKvxWsMQ-VBn1qHNIDLhtJpeduB6mrsOmouDId3tV2lqHNsCyWppaoy9NL1nYCQtTS1RF6aXp2AlLUwvURemGSnYCYvTS9QGT3phk96dhk5kppkqAuabuNVYCYyUwyVHmkzTsA8saqXY4OB1qfdTJBvXGKY0ZyH5sVMEweaR4u_Q1NDh1w33h-tNsLFKRfnpobnFXLiELzg1USPMm0dfeqT0EPH3c03bnmrHkgLyelNKdMdaVwIwvHtQTgcU8_yprDI4oAZgnrSYIqTGCB60h5bFO4CDk04nFG3aM0zOTQBIpJp4FMU-lOGSeKkY6iTgYAyacoC9etIQWPFADVFTxrzk01ExVq2j3vz0pMCDy2kJwpOami052--dorSVVUYAAp4qOd9BFeGxhi525PqasgBegxRRU3uAtFFFABRRRSERl6YZKrmWmlyavlAnMlMaSoCxNJmnYCUyUwuTTN1JuqrDHlvWkJphNJmiwD91JupmaM0wHZpM03NJuoAfmgHBqPNJmgZI8YYZFVmBjfIOCKsRybeDyKWVUkGcUthiJIky7W4NQvAUmBPT1FMKbT8pxUsdwwAWQbh60bCALhiDSbfmJqd0BXK9xUIDAEH8KdwIiOKjb5QcGrQTcKjlh2tuHINAEIUk59qcF-WrEcPyA9qSRPLGAOlFwIChb6UeSKkUA-opdg6g5ouFhgXFPApQuakCYpDIwmDnrTsEVIF5pdpK0XAavOMd6vwJsTJ6moLZMHOOlWwGY5PSpkxMkFOBpMUVAhaXNJmigQjBs8U8ZxTaWgBaKKbu9KAP__Z
+[0;32mI (5278) HTTP_JSON: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (5278) HTTP_JSON: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (5278) main_task: Returned from app_main()[0m

@@ -100,7 +100,7 @@ static esp_err_t client_event_get_handler(esp_http_client_event_handle_t evt)
     return ESP_OK;
 }
 
-void initialize_configuration_http(char *URL, esp_http_client_method_t request_type)
+void initialize_configuration_http(char *URL)
 {
     
     esp_http_client_config_t config = {
@@ -116,6 +116,34 @@ void initialize_configuration_http(char *URL, esp_http_client_method_t request_t
 
 
 
+void send_picture_data(uint8_t * image_data)
+{
+    //Set correct method and header for content
+      esp_http_client_set_method(client, HTTP_METHOD_POST);
+      esp_http_client_set_header(client, "Content-Type", "multipart/form-data");
+
+
+
+     //using doc commands to set up post request
+      int content_length = strlen((char *)image_data);
+      esp_err_t post_error = esp_http_client_open(client, content_length);
+
+       const uint8_t * post_data = image_data;
+
+      if (post_error == ESP_OK) 
+       { //should write 
+         int write_len = esp_http_client_write(client, (const char *)image_data, content_length);
+         esp_http_client_perform(client);
+       }
+      else
+       {
+         ESP_LOGE(TAG, "HTTP POST request failed: %s", esp_err_to_name(post_error));
+       }
+
+      ESP_ERROR_CHECK(esp_http_client_cleanup(client)); 
+   
+}
+
 cJSON* fetch_json_from_server(esp_http_client_method_t request_type)
 {
     printf("Gurt 2");
@@ -124,6 +152,7 @@ cJSON* fetch_json_from_server(esp_http_client_method_t request_type)
     cJSON * root = NULL;
 
     printf("Gurt 2.5");
+
     esp_err_t err = esp_http_client_perform(client);
 
     if (err == ESP_OK) {
@@ -149,4 +178,10 @@ cJSON* fetch_json_from_server(esp_http_client_method_t request_type)
 
     ESP_ERROR_CHECK(esp_http_client_cleanup(client)); 
     return root;
+}
+
+void send_data_through_api(__uint8_t base64_encoded, const char *url)
+{
+     esp_err_t err = esp_http_client_perform(client);
+
 }
