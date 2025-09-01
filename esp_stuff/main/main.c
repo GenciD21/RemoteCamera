@@ -118,11 +118,14 @@ void app_main(void)
 {
     initialize_internet_connection();
     esp_camera_set_psram_mode(1);
-    camera_fb_t *picture = take_picture();
-    uint8_t * base_64_picture = printf_img_base64(picture);
-
     initialize_configuration_http("http://48.217.67.239:5000/send_data/esp/Ulq24");
+    while(1)
+    {
+     camera_fb_t *picture = take_picture();
+    uint8_t * base_64_picture = printf_img_base64(picture);
     send_picture_data(base_64_picture);
+    esp_camera_fb_return(picture);
+    }
 
     
 

@@ -21,7 +21,9 @@ int main()
   unique_ptr<Schema> data;
   unique_ptr<Session> s2;
 
-  check_for_images("AAAA");
+  while (1) {
+    check_for_images("AAAA");
+  }
 
   try
   {

@@ -1,0 +1,154 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x28 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40048e22
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x19fc
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xe8c
+load:0x403cb700,len:0x3164
+entry 0x403c8940
+[0;32mI (26) boot: ESP-IDF v5.3.3 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Aug 31 2025 12:55:47[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) boot: efuse block revision: v1.3[0m
+[0;32mI (38) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (43) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (48) boot.esp32s3: SPI Mode       : QOUT[0m
+[0;32mI (53) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (58) boot: Enabling RNG early entropy source...[0m
+[0;32mI (63) boot: Partition Table:[0m
+[0;32mI (67) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (74) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (82) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (89) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (97) boot: End of partition table[0m
+[0;32mI (101) esp_image: segment 0: paddr=00010020 vaddr=3c0c0020 size=367ech (223212) map[0m
+[0;32mI (146) esp_image: segment 1: paddr=00046814 vaddr=3fc9d000 size=0782ch ( 30764) load[0m
+[0;32mI (152) esp_image: segment 2: paddr=0004e048 vaddr=40374000 size=01fd0h (  8144) load[0m
+[0;32mI (154) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=b5b30h (744240) map[0m
+[0;32mI (282) esp_image: segment 4: paddr=00105b58 vaddr=40375fd0 size=16f94h ( 94100) load[0m
+[0;32mI (312) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (313) boot: Disabling RNG early entropy source...[0m
+[0;32mI (325) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (325) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (325) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (330) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (335) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (340) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (345) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (351) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (357) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (363) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (369) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (375) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (379) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (384) esp_psram: Speed: 80MHz[0m
+[0;32mI (409) mmu_psram: Read only data copied and mapped to SPIRAM[0m
+[0;32mI (476) mmu_psram: Instructions copied and mapped to SPIRAM[0m
+[0;32mI (476) cpu_start: Multicore app[0m
+[0;32mI (872) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (880) cpu_start: Pro cpu start user code[0m
+[0;32mI (880) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (881) app_init: Application information:[0m
+[0;32mI (883) app_init: Project name:     hello_world[0m
+[0;32mI (889) app_init: App version:      15b3871-dirty[0m
+[0;32mI (894) app_init: Compile time:     Aug 31 2025 12:55:44[0m
+[0;32mI (900) app_init: ELF file SHA256:  a6e344606...[0m
+[0;32mI (905) app_init: ESP-IDF:          v5.3.3[0m
+[0;32mI (910) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (915) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (920) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (925) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (932) heap_init: At 3FCAB3C8 len 0003E348 (248 KiB): RAM[0m
+[0;32mI (938) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (944) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (950) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (957) esp_psram: Adding pool of 7168K of PSRAM memory to heap allocator[0m
+[0;32mI (964) spi_flash: detected chip: generic[0m
+[0;32mI (969) spi_flash: flash io: qout[0m
+[0;33mW (973) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (983) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (990) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (998) main_task: Started on CPU0[0m
+[0;32mI (1008) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1008) main_task: Calling app_main()[0m
+[0;32mI (1028) wifi station: ESP_WIFI_MODE_STA[0m
+[0;32mI (1028) wifi station: Initiating Wifi Protcol[0m
+[0;32mI (1028) pp: pp rom version: e7ae62f[0m
+[0;32mI (1028) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1048) wifi:wifi driver task: 3fcbd1e0, prio:23, stack:6656, core=0[0m
+[0;32mI (1048) wifi:wifi firmware version: b0b320f[0m
+[0;32mI (1048) wifi:wifi certification version: v7.0[0m
+[0;32mI (1048) wifi:config NVS flash: enabled[0m
+[0;32mI (1048) wifi:config nano formating: disabled[0m
+[0;32mI (1058) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1058) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1068) wifi:Init management short buffer num: 32[0m
+[0;32mI (1068) wifi:Init static tx buffer num: 16[0m
+[0;32mI (1078) wifi:Init tx cache buffer num: 32[0m
+[0;32mI (1078) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1078) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1088) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1088) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1098) wifi_init: rx ba win: 6[0m
+[0;32mI (1098) wifi_init: accept mbox: 6[0m
+[0;32mI (1098) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1108) wifi_init: udp mbox: 6[0m
+[0;32mI (1108) wifi_init: tcp mbox: 6[0m
+[0;32mI (1118) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1118) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1118) wifi_init: tcp mss: 1440[0m
+[0;32mI (1128) wifi_init: WiFi/LWIP prefer SPIRAM[0m
+[0;32mI (1128) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1138) wifi_init: WiFi RX IRAM OP enabled[0m
+WIFI SSID: PAL3.0, WIFI Username: gduraku@purdue.edu, Wifi Password: Ulqini24W (1138) wifi:Password length is zero, but authmode threshold is 5, making it impossible to connect to an AP with authmode OPEN
+[0;32mI (1158) wifi station: WIFI Started[0m
+[0;32mI (1158) phy_init: phy_version 700,8582a7fd,Feb 10 2025,20:13:11[0m
+[0;32mI (1198) wifi:mode : sta (30:ed:a0:a0:e6:98)[0m
+[0;32mI (1198) wifi:enable tsf[0m
+[0;32mI (1198) wifi station: WIFI Connecting[0m
+[0;32mI (1208) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1208) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1218) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1228) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1688) wifi:connected with PAL3.0, aid = 33, channel 6, BW20, bssid = 34:5d:a8:62:bf:e2[0m
+[0;32mI (1688) wifi:security: WPA2-ENT, phy: bgn, rssi: -61[0m
+[0;32mI (1688) wifi:pm start, type: 1[0m
+
+[0;32mI (1688) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1698) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (1708) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1718) wifi:<ba-add>idx:0 (ifx:0, 34:5d:a8:62:bf:e2), tid:0, ssn:2, winSize:64[0m
+[0;32mI (2028) wifi:<ba-add>idx:1 (ifx:0, 34:5d:a8:62:bf:e2), tid:3, ssn:0, winSize:64[0m
+[0;32mI (2708) esp_netif_handlers: sta ip: 10.184.29.101, mask: 255.255.128.0, gw: 10.184.0.1[0m
+[0;32mI (2708) wifi station: got ip:10.184.29.101[0m
+[0;32mI (2708) s3 ll_cam: DMA Channel=1[0m
+[0;32mI (2708) cam_hal: cam init ok[0m
+[0;32mI (2718) sccb: pin_sda 4 pin_scl 5[0m
+[0;32mI (2718) sccb: sccb_i2c_port=1[0m
+[0;32mI (2718) gpio: GPIO[38]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2758) camera: Camera PID=0x3660 VER=0x00 MIDL=0x00 MIDH=0x00[0m
+[0;32mI (2758) camera: Detected OV3660 camera[0m
+[0;32mI (2758) camera: Detected camera at address=0x3c[0m
+[0;32mI (3078) cam_hal: PSRAM DMA mode enabled[0m
+[0;32mI (3078) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 6[0m
+[0;32mI (3078) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 24, dma_buffer_size: 153600[0m
+[0;32mI (3088) cam_hal: buffer_size: 153600, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 40, total_cnt: 11[0m
+[0;32mI (3098) cam_hal: Allocating 168976 Byte frame buffer in PSRAM[0m
+[0;32mI (3108) cam_hal: Frame[0]: Offset: 16, Addr: 0x3C110660[0m
+[0;32mI (3108) cam_hal: cam config ok[0m
+[0;32mI (3128) ov3660: Calculated VCO: 160000000 Hz, PLLCLK: 80000000 Hz, SYSCLK: 20000000 Hz, PCLK: 10000000 Hz[0m
+[0;32mI (3148) example:take_picture: Taking picture...[0m
+[0;32mI (3448) example:take_picture: Picture taken! Its size was: 153600 bytes[0m
+_9j_4AAQSkZJRgABAQAAAQABAAD_2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P_2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P_wAARCADwAUADASIAAhEBAxEB_8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL_8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4-Tl5ufo6erx8vP09fb3-Pn6_8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL_8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3-Pn6_9oADAMBAAIRAxEAPwDhxS0gpayMxaKKKACloopCACloFFABzTlORzTc0A80MB-PWmMMc1IORSEVNxjN1Jil24NLTAMUUUUAFFFLQAlFLRQAUUCigBhUGomQirFNZQaadgK1LTmUim1oMKKKKACjFFFACUUtJQMWkopaAEpaKSgBaKKKBBRRRQBJS0gpcVAhaKKBQIWiiikAtFFFABRRRQA5TinVGDT1PakxgRSU40mKQCUUUUwCiiigAooopCClpKWgYlLRRQAxlDCoWTaas01lDDmqTsBWop7ptPtTK0uMKKKKACiiigBKWiigYlLRSUAFLRRQAUUUUCJaKKKgQtLSdqWkIBRRRQAoooooAKMUUUABpRSYoHBoAkByKDTQcU-oGNIpKfTSKYCUUUtACUUUUwCiiigBaSiikAtFAooEIQCKrupB6VZprpuFUnYZVpaVlINNrQoWiiigQGiiigYUlLRQAUlLSUALRRRQBLS0lGKgkWlpKWkIKO9FLQAUUUUALRSUtIApCM0tLQAg5p6ntUfQ5pwNDAkpCKFORS1IxhopxFNpgFJS0UAJ2opaKAEopaSgBaKMUtAhKCaWigYxlDCq7KVPNWsU1k3CqTsBWopWXaaStCgooooEFFFFAxKKWigAooooES0tFFQIKWiikIWiiigAoopaACiiikAdKWiigApAcHFLSEUAOBxT-oqIHNPU44PSk0CHU0inGgikMZRSniimISiiloGJiilooAKKKKQgooopjCiiigBjoGFViMHFXKhlj7iqiwRDRRRWhQUUUUCEoopaBiUUtFAE1FFFQSLRSUvakIWjvQKKACloopAFFFLQAd6X3pO1RO-eB0oSuBNSduaZE3Y1JQ9AG9DS0GkHFAEinIp1Rjg1IDnmpYxtIadSGgBKKKKACiiimAUtJS0hCUUUUDCiigUAL2ppGRTsUlAFaRcGmVZkXctViMGtYu40FFFFUAUUUUDCiiigRMKKKKgQtFHelpCCiiloAKKKWkIKTOBk0FgBUTMTTSuMGct9KSkoqhigkGp1O4ZqvnFPifDY7Gk1cGTGmkU6g1BIgPFOU4NM6U6m0MkNGKRT2pcVAxpFJTzTSKYBSUtFABRRRQAUUUlAC0UUUAFJS0lAAagmXBzU9I67lxVJ2YFSilIwcUlajCiiigYUUUUCJu9LSUuKzEFLRS0CAUUUUgFpCwUUjNt-tREk800gFJJPNNpaSqGFBNBOKbTAKM0UUxlmN9y-9OqtG-1s9qtdRWTVmSxtA9KWkIoAXpUgORmowcilU4NJoZJSYpaKkBhopxFNpgFFFFABRRRQAUUUUAFFFFABRRRQBBMncVDVthkEGqrDaxFaRY0JRRRVgFFFFAE1KKBS1mSLRRS0gAU13xwOtIz46VHTSACc0UmcUbhVDFppPpQWptOw7C0UUUwCiiigAqeF8jae1QUqnaQR1pNXQMt0mKAwZQRS1kSN6HNLQRSA9qYEintTqjp4ORUsaFpCKWikMZS0EYpKYgooooAKKKKACiiigAooooAKhmTIyKmpCARTTsBTop0i7WptbDCiiigCcUtIKdWZIUx27ChmzwOlMPFNIaQhOKQtSE02rsOwuc0lFHamUFFBpKAFpc0lFAC5ozSUUCHUUgNLSAlgfB2nvU9UxxVqNty571nJdSGh3akIp1JUiAHIpQcU0cGnUMB9FNU9qdUlhTe9OpCKAEpKWimISilpKACilpKACiiigAooooAjlTcvvVbGDzVyopY88iri-gEFFFFaDJxS03NIz7RUWJFlwOe9QE5oJJOTSVSVi0hc0lFFUMKKKKAEpTRRQAlLRmigAoopKAFzThTaUGgQtPifa3saZS1LEXKSo4XyNp6ipayaIGkUo9KWmnrTAdTgcimjkUA4pNDTH0UUVJQhFJTqaRQAUUUlMQtJS0lAC0lFFABRRRQAUlLRQBBLH3FQ1cqKSLPK1pGXcEyEn3ppNFJVlBRRRmmMM0UUUAFHaiigBaQ0tBoASkpwUmlC5ouA2jrT_LNHzDjOKVxDMUU4579abmmAop1MzTlOaTBjlba2RVoEMMiqlTQvg7T36VEkQyaiiipENBwadSGgUAOU06mU8HipaGmFHUUUUihuKKcRTaBBRRRQAlFLSUwCiiigAoopKACiiigRRoooroNAooooAKKKKAClFFKBSAMUYA-tKTigcc96QgwTRnBxRnmgsKYChzSlgy9KZnI6UKeaVgENN71OyhhUTKRTTGNpRSUtMB2aUdc0mOM0DikSW0bcue9OqvE21vY1ZrNqxDEpMd6WikAdqXODTRxS0NAP60UinFOqGi0JSEUtFADaKU8UmKBBRRRTASilpKACiikoAKbI21acelVpW3NgdqqKuw3IqKKK2LCiiigApaBS0hCUZpaSgBQpNKenvTlpXTuKVxkRopxGabimIUU4Y7U0A96cBSYDwe1KUyMULT8VDZRVZSpoFTuuRVfpWidxDgaSkpaBDxyKsRNkYPUVVQ9qkU7WzUtEtFmlpFOQCKWoJGmlHSikPWgQtOB7U2lHFJopMdRRnNFSUFNNOoNADaSlopiEooooAKKKQ0CGSvtU1W606Vtze1NrWKsikNoooqygpaBS0hCUUUdaACiigUASKcVIDxUIqVTxzUsaAjnim4B61JjikxSuMYRxxRjmlYYphJHBpoRKlSVXVqkDVLQwPWoZFw2amJ5FNkXKmmnYRBRRSVoA5etSVGo5qSpZLJYXwdpqaqnQ8VZRty-9Q0SxaKWkpCEB5p3ammlBoAUHBp1MpyntSZSFoooqRiEUlOpjkKMseKBBQeKha4GPlGTUDSu3U1ag2Fi3vX-8KjlmGML1qtS9qtQSHYKWkpRVDP_Z
+[0;31mE (5498) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (5498) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (5498) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (5508) HTTP_JSON: HTTP POST request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (5508) HTTP_JSON: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (5518) HTTP_JSON: Last esp error code: 0x8004[0m
+[0;32mI (5518) HTTP_JSON: Last mbedtls failure: 0x0[0m
+[0;32mI (5528) main_task: Returned from app_main()[0m

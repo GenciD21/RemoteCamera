@@ -1,0 +1,12 @@
+[0;33m--- esp-idf-monitor 1.7.0 on /dev/ttyACM0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x400490d5: [0;33musb_uart_device_rx_one_char[0m[0m in [0;32mROM[0m
+[0m--- 0x4200c7f1: [0;33mtake_picture[0m[0m at [0;32m/home/genci21/Desktop/RemoteCamera/esp_stuff/main/extra_executables/fotos.c[0m[0m:[1;31m188[0m
+[0m--- 0x400556d5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x400556e5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x4200c7ee: [0;33mtake_picture[0m[0m at [0;32m/home/genci21/Desktop/RemoteCamera/esp_stuff/main/extra_executables/fotos.c[0m[0m:[1;31m188[0m
+[0m--- 0x4200c0f2: [0;33mapp_main[0m[0m at [0;32m/home/genci21/Desktop/RemoteCamera/esp_stuff/main/main.c[0m[0m:[1;31m124[0m
+[0m--- 0x420b4b0f: [0;33mmain_task[0m[0m at [0;32m/home/genci21/esp/esp-idf/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x4038020d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/genci21/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x40375e8c: [0;33mesp_restart_noos[0m[0m at [0;32m/home/genci21/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m158[0m
+[0m

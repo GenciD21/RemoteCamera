@@ -19,7 +19,7 @@ void check_for_images(char * NAME)
         SqlResult res = s2->sql("SELECT image_name, image_s FROM data.image_line  WHERE `Key` = '1111';").execute();
 
         row = res.fetchOne();
-        cout << row[0] << endl;
+        cout << row[1] << endl;
     }
     catch (const mysqlx::Error &err) {
         cerr << err;
@@ -29,8 +29,9 @@ void check_for_images(char * NAME)
         cout << "New Picture Detected\n";
         auto bytes = row[1].getRawBytes();
         const char* data = reinterpret_cast<const char*>(bytes.first);
-        outputFileStream.open("saved_images.png",std::ios::binary);
+        outputFileStream.open("saved_images.jpg",std::ios::binary);
         outputFileStream.write(data, bytes.second);
+        outputFileStream.close();
 
 
     }
